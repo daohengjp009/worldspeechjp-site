@@ -3,21 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>人物伝ブログ — 世界スピーチJP</title>
-<meta name="description" content="世界を変えた人物たちの生涯と名言を、日本語でじっくり読む人物伝シリーズ。">
+<title>物語アーカイブ — 世界スピーチJP</title>
+<meta name="description" content="チャンネルで紹介した人物伝の物語に加え、家族に受け継がれる記憶、戦争を生き抜いた体験、人生を変えた出来事など、心に残る実話を紹介していく物語アーカイブ。">
 <link rel="canonical" href="https://www.worldspeechjp.com/blog/">
 <link rel="icon" href="/assets/avatar.jpg">
 <link rel="apple-touch-icon" href="/assets/avatar.jpg">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.worldspeechjp.com/blog/">
-<meta property="og:title" content="人物伝ブログ — 世界スピーチJP">
-<meta property="og:description" content="世界を変えた人物たちの生涯と名言を、日本語でじっくり読む人物伝シリーズ。">
+<meta property="og:title" content="物語アーカイブ — 世界スピーチJP">
+<meta property="og:description" content="人物伝の物語と、心に残る実話を紹介していく物語アーカイブ。">
 <meta property="og:image" content="https://www.worldspeechjp.com/assets/avatar.jpg">
 <meta property="og:locale" content="ja_JP">
 <meta property="og:site_name" content="世界スピーチJP">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="人物伝ブログ — 世界スピーチJP">
-<meta name="twitter:description" content="世界を変えた人物たちの生涯と名言を、日本語でじっくり読むシリーズ。">
+<meta name="twitter:title" content="物語アーカイブ — 世界スピーチJP">
+<meta name="twitter:description" content="人物伝の物語と、心に残る実話を紹介していく物語アーカイブ。">
 <meta name="twitter:image" content="https://www.worldspeechjp.com/assets/avatar.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,8 +29,8 @@
   a { color: inherit; text-decoration: none; }
   @keyframes wsjp-up { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
   @keyframes wsjp-sun { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+  .wsjp-card { transition: transform .16s, box-shadow .16s; }
   .wsjp-card:hover { transform: translateY(-4px); box-shadow: 0 20px 40px -22px rgba(26,22,19,0.4) !important; }
-  .wsjp-article { animation: wsjp-up .4s ease both; }
   .wsjp-burger { display:none; align-items:center; justify-content:center; width:42px; height:42px; border:none; background:transparent; cursor:pointer; color:#1A1613; }
   .wsjp-burger svg { width:26px; height:26px; }
   @media (max-width: 640px) {
@@ -39,8 +39,7 @@
     .wsjp-navlinks.open { display:flex !important; }
     .wsjp-navlinks > a { padding:11px 6px; font-size:15px !important; border-bottom:1px solid #EADFC9; }
     .wsjp-navlinks > a:last-child { border-bottom:none; justify-content:center; margin-top:8px; }
-  }
-</style>
+  }</style>
 </head>
 <body>
 <div style="position:relative; min-height:100vh; background:#F4EEE1; overflow-x:hidden;">
@@ -58,6 +57,7 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/></svg>
       </button>
       <div class="wsjp-navlinks" style="display:flex; align-items:center; gap:20px;">
+        
         <a href="/" style="font-size:13px; font-weight:700; letter-spacing:0.5px; color:#6B6157;">ホーム</a>
         <a href="/tools/" style="font-size:13px; font-weight:700; letter-spacing:0.5px; color:#6B6157;">ツール</a>
         <a href="/#demo" style="font-size:13px; font-weight:700; letter-spacing:0.5px; color:#6B6157;">吹替デモ</a>
@@ -66,478 +66,164 @@
     </div>
   </nav>
 
-  <div id="wsjp-index">
-    <section style="position:relative; max-width:1100px; margin:0 auto; padding:64px 28px 30px; overflow:hidden;">
-      <div style="position:absolute; top:-120px; right:-120px; width:480px; height:480px; border-radius:50%; background:repeating-conic-gradient(from 0deg at 50% 50%, #E0300E 0deg 3deg, transparent 3deg 11deg); opacity:0.06; z-index:0; animation:wsjp-sun 120s linear infinite;"></div>
-      <div style="position:relative; z-index:2;">
-        <div style="display:inline-flex; align-items:center; gap:10px; margin-bottom:18px;">
-          <span style="width:26px; height:2px; background:#E0300E;"></span>
-          <span style="font-family:'Noto Serif JP',serif; font-size:12px; font-weight:600; letter-spacing:5px; color:#E0300E;">PORTRAITS ・ 人物伝</span>
-        </div>
-        <h1 style="font-family:'Black Han Sans',sans-serif; font-size:clamp(34px,5vw,60px); line-height:1.14; letter-spacing:1px; color:#1A1613; margin-bottom:18px;">読む、<span style="color:#E0300E;">人物伝</span>。</h1>
-        <p style="font-size:16px; color:#5C5349; max-width:560px;">動画では伝えきれなかった、世界を変えた人物たちの物語を、じっくり読む長編シリーズ。各話、動画とあわせてどうぞ。</p>
-      </div>
-    </section>
-    <section style="max-width:1100px; margin:0 auto; padding:0 28px 8px;">
-      <div style="display:flex; align-items:flex-start; gap:12px; background:#FBF3DE; border:1px solid #EAD9A8; border-radius:14px; padding:14px 18px; font-size:13px; color:#8a6d2f;">
-        <span style="font-size:16px; line-height:1.3;">✏️</span>
-        <span>これは下書きの記事です。各動画の実際の内容にあわせて、テキストを自由に編集してください。</span>
-      </div>
-    </section>
-    <section style="position:relative; z-index:2; max-width:1100px; margin:0 auto; padding:34px 28px 80px;">
-      <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); gap:24px;">
-        <a href="#elon" class="wsjp-card" data-key="elon" style="text-align:left; cursor:pointer; background:#fff; border:1px solid #EADFC9; border-radius:20px; overflow:hidden; box-shadow:0 1px 0 rgba(0,0,0,0.02); transition:transform .16s, box-shadow .16s; display:flex; flex-direction:column;">
-          <div style="position:relative; height:170px; display:flex; align-items:center; justify-content:center; background:radial-gradient(circle at 70% 25%, #E0300E 0%, #B5200A 100%);">
-            <span style="font-size:62px; line-height:1; filter:drop-shadow(0 6px 14px rgba(0,0,0,0.25));">🚀</span>
-            <span style="position:absolute; top:14px; left:16px; font-family:'Noto Serif JP',serif; font-size:13px; font-weight:700; letter-spacing:2px; color:rgba(255,255,255,0.92);">其ノ一</span>
-          </div>
-          <div style="padding:20px 22px 24px; display:flex; flex-direction:column; gap:8px; flex:1;">
-            <span style="font-family:'Noto Serif JP',serif; font-size:11px; font-weight:600; letter-spacing:2px; color:#E0300E;">ELON MUSK</span>
-            <h3 style="font-family:'Black Han Sans',sans-serif; font-size:21px; letter-spacing:0.5px; color:#1A1613; line-height:1.3;">火星を夢見た男</h3>
-            <p style="font-size:13.5px; color:#6B6157; line-height:1.7; flex:1;">南アフリカの少年は、いかにして電気自動車とロケットで世界を作り変えたのか。</p>
-            <span style="margin-top:6px; display:inline-flex; align-items:center; gap:7px; font-size:13px; font-weight:700; color:#1A1613;">読む <span style="color:#E0300E;">→</span></span>
-          </div>
-        </a>
-        <a href="#jobs" class="wsjp-card" data-key="jobs" style="text-align:left; cursor:pointer; background:#fff; border:1px solid #EADFC9; border-radius:20px; overflow:hidden; box-shadow:0 1px 0 rgba(0,0,0,0.02); transition:transform .16s, box-shadow .16s; display:flex; flex-direction:column;">
-          <div style="position:relative; height:170px; display:flex; align-items:center; justify-content:center; background:radial-gradient(circle at 70% 25%, #1A1613 0%, #3a322a 100%);">
-            <span style="font-size:62px; line-height:1; filter:drop-shadow(0 6px 14px rgba(0,0,0,0.25));">🍎</span>
-            <span style="position:absolute; top:14px; left:16px; font-family:'Noto Serif JP',serif; font-size:13px; font-weight:700; letter-spacing:2px; color:rgba(255,255,255,0.92);">其ノ二</span>
-          </div>
-          <div style="padding:20px 22px 24px; display:flex; flex-direction:column; gap:8px; flex:1;">
-            <span style="font-family:'Noto Serif JP',serif; font-size:11px; font-weight:600; letter-spacing:2px; color:#E0300E;">STEVE JOBS</span>
-            <h3 style="font-family:'Black Han Sans',sans-serif; font-size:21px; letter-spacing:0.5px; color:#1A1613; line-height:1.3;">点と点をつなぐ者</h3>
-            <p style="font-size:13.5px; color:#6B6157; line-height:1.7; flex:1;">大学を中退した青年が、いかにして世界の暮らしそのものをデザインしたのか。</p>
-            <span style="margin-top:6px; display:inline-flex; align-items:center; gap:7px; font-size:13px; font-weight:700; color:#1A1613;">読む <span style="color:#E0300E;">→</span></span>
-          </div>
-        </a>
-        <a href="#obama" class="wsjp-card" data-key="obama" style="text-align:left; cursor:pointer; background:#fff; border:1px solid #EADFC9; border-radius:20px; overflow:hidden; box-shadow:0 1px 0 rgba(0,0,0,0.02); transition:transform .16s, box-shadow .16s; display:flex; flex-direction:column;">
-          <div style="position:relative; height:170px; display:flex; align-items:center; justify-content:center; background:radial-gradient(circle at 70% 25%, #2b5c8a 0%, #1d3f60 100%);">
-            <span style="font-size:62px; line-height:1; filter:drop-shadow(0 6px 14px rgba(0,0,0,0.25));">✨</span>
-            <span style="position:absolute; top:14px; left:16px; font-family:'Noto Serif JP',serif; font-size:13px; font-weight:700; letter-spacing:2px; color:rgba(255,255,255,0.92);">其ノ三</span>
-          </div>
-          <div style="padding:20px 22px 24px; display:flex; flex-direction:column; gap:8px; flex:1;">
-            <span style="font-family:'Noto Serif JP',serif; font-size:11px; font-weight:600; letter-spacing:2px; color:#E0300E;">BARACK OBAMA</span>
-            <h3 style="font-family:'Black Han Sans',sans-serif; font-size:21px; letter-spacing:0.5px; color:#1A1613; line-height:1.3;">希望という名の演説</h3>
-            <p style="font-size:13.5px; color:#6B6157; line-height:1.7; flex:1;">ハワイの少年は、いかにして「変化は可能だ」と国中に信じさせたのか。</p>
-            <span style="margin-top:6px; display:inline-flex; align-items:center; gap:7px; font-size:13px; font-weight:700; color:#1A1613;">読む <span style="color:#E0300E;">→</span></span>
-          </div>
-        </a>
-        <a href="#trump" class="wsjp-card" data-key="trump" style="text-align:left; cursor:pointer; background:#fff; border:1px solid #EADFC9; border-radius:20px; overflow:hidden; box-shadow:0 1px 0 rgba(0,0,0,0.02); transition:transform .16s, box-shadow .16s; display:flex; flex-direction:column;">
-          <div style="position:relative; height:170px; display:flex; align-items:center; justify-content:center; background:radial-gradient(circle at 70% 25%, #b5252b 0%, #7d181c 100%);">
-            <span style="font-size:62px; line-height:1; filter:drop-shadow(0 6px 14px rgba(0,0,0,0.25));">🇺🇸</span>
-            <span style="position:absolute; top:14px; left:16px; font-family:'Noto Serif JP',serif; font-size:13px; font-weight:700; letter-spacing:2px; color:rgba(255,255,255,0.92);">其ノ四</span>
-          </div>
-          <div style="padding:20px 22px 24px; display:flex; flex-direction:column; gap:8px; flex:1;">
-            <span style="font-family:'Noto Serif JP',serif; font-size:11px; font-weight:600; letter-spacing:2px; color:#E0300E;">DONALD TRUMP</span>
-            <h3 style="font-family:'Black Han Sans',sans-serif; font-size:21px; letter-spacing:0.5px; color:#1A1613; line-height:1.3;">ディールの帝王</h3>
-            <p style="font-size:13.5px; color:#6B6157; line-height:1.7; flex:1;">不動産王は、いかにして政治の常識をことごとく覆したのか。</p>
-            <span style="margin-top:6px; display:inline-flex; align-items:center; gap:7px; font-size:13px; font-weight:700; color:#1A1613;">読む <span style="color:#E0300E;">→</span></span>
-          </div>
-        </a>
-        <a href="#gates" class="wsjp-card" data-key="gates" style="text-align:left; cursor:pointer; background:#fff; border:1px solid #EADFC9; border-radius:20px; overflow:hidden; box-shadow:0 1px 0 rgba(0,0,0,0.02); transition:transform .16s, box-shadow .16s; display:flex; flex-direction:column;">
-          <div style="position:relative; height:170px; display:flex; align-items:center; justify-content:center; background:radial-gradient(circle at 70% 25%, #1f7a8c 0%, #145561 100%);">
-            <span style="font-size:62px; line-height:1; filter:drop-shadow(0 6px 14px rgba(0,0,0,0.25));">💻</span>
-            <span style="position:absolute; top:14px; left:16px; font-family:'Noto Serif JP',serif; font-size:13px; font-weight:700; letter-spacing:2px; color:rgba(255,255,255,0.92);">其ノ五</span>
-          </div>
-          <div style="padding:20px 22px 24px; display:flex; flex-direction:column; gap:8px; flex:1;">
-            <span style="font-family:'Noto Serif JP',serif; font-size:11px; font-weight:600; letter-spacing:2px; color:#E0300E;">BILL GATES</span>
-            <h3 style="font-family:'Black Han Sans',sans-serif; font-size:21px; letter-spacing:0.5px; color:#1A1613; line-height:1.3;">すべての机にパソコンを</h3>
-            <p style="font-size:13.5px; color:#6B6157; line-height:1.7; flex:1;">プログラミングに憑かれた少年は、いかにして世界一の富豪となり、それを手放したのか。</p>
-            <span style="margin-top:6px; display:inline-flex; align-items:center; gap:7px; font-size:13px; font-weight:700; color:#1A1613;">読む <span style="color:#E0300E;">→</span></span>
-          </div>
-        </a>
-        <a href="#zuck" class="wsjp-card" data-key="zuck" style="text-align:left; cursor:pointer; background:#fff; border:1px solid #EADFC9; border-radius:20px; overflow:hidden; box-shadow:0 1px 0 rgba(0,0,0,0.02); transition:transform .16s, box-shadow .16s; display:flex; flex-direction:column;">
-          <div style="position:relative; height:170px; display:flex; align-items:center; justify-content:center; background:radial-gradient(circle at 70% 25%, #3b5998 0%, #28406e 100%);">
-            <span style="font-size:62px; line-height:1; filter:drop-shadow(0 6px 14px rgba(0,0,0,0.25));">💬</span>
-            <span style="position:absolute; top:14px; left:16px; font-family:'Noto Serif JP',serif; font-size:13px; font-weight:700; letter-spacing:2px; color:rgba(255,255,255,0.92);">其ノ六</span>
-          </div>
-          <div style="padding:20px 22px 24px; display:flex; flex-direction:column; gap:8px; flex:1;">
-            <span style="font-family:'Noto Serif JP',serif; font-size:11px; font-weight:600; letter-spacing:2px; color:#E0300E;">MARK ZUCKERBERG</span>
-            <h3 style="font-family:'Black Han Sans',sans-serif; font-size:21px; letter-spacing:0.5px; color:#1A1613; line-height:1.3;">世界をつないだ寮の一室</h3>
-            <p style="font-size:13.5px; color:#6B6157; line-height:1.7; flex:1;">19歳の大学生が書いたコードは、いかにして数十億人の日常になったのか。</p>
-            <span style="margin-top:6px; display:inline-flex; align-items:center; gap:7px; font-size:13px; font-weight:700; color:#1A1613;">読む <span style="color:#E0300E;">→</span></span>
-          </div>
-        </a>
-        <a href="#bezos" class="wsjp-card" data-key="bezos" style="text-align:left; cursor:pointer; background:#fff; border:1px solid #EADFC9; border-radius:20px; overflow:hidden; box-shadow:0 1px 0 rgba(0,0,0,0.02); transition:transform .16s, box-shadow .16s; display:flex; flex-direction:column;">
-          <div style="position:relative; height:170px; display:flex; align-items:center; justify-content:center; background:radial-gradient(circle at 70% 25%, #e0820e 0%, #a85e07 100%);">
-            <span style="font-size:62px; line-height:1; filter:drop-shadow(0 6px 14px rgba(0,0,0,0.25));">📦</span>
-            <span style="position:absolute; top:14px; left:16px; font-family:'Noto Serif JP',serif; font-size:13px; font-weight:700; letter-spacing:2px; color:rgba(255,255,255,0.92);">其ノ七</span>
-          </div>
-          <div style="padding:20px 22px 24px; display:flex; flex-direction:column; gap:8px; flex:1;">
-            <span style="font-family:'Noto Serif JP',serif; font-size:11px; font-weight:600; letter-spacing:2px; color:#E0300E;">JEFF BEZOS</span>
-            <h3 style="font-family:'Black Han Sans',sans-serif; font-size:21px; letter-spacing:0.5px; color:#1A1613; line-height:1.3;">地球最大の店</h3>
-            <p style="font-size:13.5px; color:#6B6157; line-height:1.7; flex:1;">安定した高給を捨てた男は、いかにして買い物の形を変えたのか。</p>
-            <span style="margin-top:6px; display:inline-flex; align-items:center; gap:7px; font-size:13px; font-weight:700; color:#1A1613;">読む <span style="color:#E0300E;">→</span></span>
-          </div>
-        </a>
-        <a href="#putin" class="wsjp-card" data-key="putin" style="text-align:left; cursor:pointer; background:#fff; border:1px solid #EADFC9; border-radius:20px; overflow:hidden; box-shadow:0 1px 0 rgba(0,0,0,0.02); transition:transform .16s, box-shadow .16s; display:flex; flex-direction:column;">
-          <div style="position:relative; height:170px; display:flex; align-items:center; justify-content:center; background:radial-gradient(circle at 70% 25%, #4a4a4a 0%, #2b2b2b 100%);">
-            <span style="font-size:62px; line-height:1; filter:drop-shadow(0 6px 14px rgba(0,0,0,0.25));">🇷🇺</span>
-            <span style="position:absolute; top:14px; left:16px; font-family:'Noto Serif JP',serif; font-size:13px; font-weight:700; letter-spacing:2px; color:rgba(255,255,255,0.92);">其ノ八</span>
-          </div>
-          <div style="padding:20px 22px 24px; display:flex; flex-direction:column; gap:8px; flex:1;">
-            <span style="font-family:'Noto Serif JP',serif; font-size:11px; font-weight:600; letter-spacing:2px; color:#E0300E;">VLADIMIR PUTIN</span>
-            <h3 style="font-family:'Black Han Sans',sans-serif; font-size:21px; letter-spacing:0.5px; color:#1A1613; line-height:1.3;">沈黙の戦略家</h3>
-            <p style="font-size:13.5px; color:#6B6157; line-height:1.7; flex:1;">元情報員は、いかにして大国の頂点に立ち続けたのか。</p>
-            <span style="margin-top:6px; display:inline-flex; align-items:center; gap:7px; font-size:13px; font-weight:700; color:#1A1613;">読む <span style="color:#E0300E;">→</span></span>
-          </div>
-        </a>
-        <a href="#xi" class="wsjp-card" data-key="xi" style="text-align:left; cursor:pointer; background:#fff; border:1px solid #EADFC9; border-radius:20px; overflow:hidden; box-shadow:0 1px 0 rgba(0,0,0,0.02); transition:transform .16s, box-shadow .16s; display:flex; flex-direction:column;">
-          <div style="position:relative; height:170px; display:flex; align-items:center; justify-content:center; background:radial-gradient(circle at 70% 25%, #9c1f1f 0%, #6b1414 100%);">
-            <span style="font-size:62px; line-height:1; filter:drop-shadow(0 6px 14px rgba(0,0,0,0.25));">🇨🇳</span>
-            <span style="position:absolute; top:14px; left:16px; font-family:'Noto Serif JP',serif; font-size:13px; font-weight:700; letter-spacing:2px; color:rgba(255,255,255,0.92);">其ノ九</span>
-          </div>
-          <div style="padding:20px 22px 24px; display:flex; flex-direction:column; gap:8px; flex:1;">
-            <span style="font-family:'Noto Serif JP',serif; font-size:11px; font-weight:600; letter-spacing:2px; color:#E0300E;">XI JINPING</span>
-            <h3 style="font-family:'Black Han Sans',sans-serif; font-size:21px; letter-spacing:0.5px; color:#1A1613; line-height:1.3;">下放された皇子</h3>
-            <p style="font-size:13.5px; color:#6B6157; line-height:1.7; flex:1;">失脚した高官の息子は、いかにして大国の頂点へと登りつめたのか。</p>
-            <span style="margin-top:6px; display:inline-flex; align-items:center; gap:7px; font-size:13px; font-weight:700; color:#1A1613;">読む <span style="color:#E0300E;">→</span></span>
-          </div>
-        </a>
-      </div>
-    </section>
-  </div>
+  <!-- HERO -->
+  <section style="position:relative; max-width:1100px; margin:0 auto; padding:66px 28px 26px; overflow:hidden;">
+    <div style="position:absolute; top:-120px; right:-120px; width:480px; height:480px; border-radius:50%; background:repeating-conic-gradient(from 0deg at 50% 50%, #E0300E 0deg 3deg, transparent 3deg 11deg); opacity:0.06; z-index:0; animation:wsjp-sun 120s linear infinite;"></div>
+    <div style="position:relative; z-index:2;">
+      <div style="display:flex; align-items:center; gap:10px; margin-bottom:12px;"><span style="width:26px; height:2px; background:#E0300E;"></span><span style="font-family:'Noto Serif JP',serif; font-size:12px; font-weight:600; letter-spacing:4px; color:#E0300E;">STORY ARCHIVE ・ 物語アーカイブ</span></div>
+      <h1 style="font-family:'Black Han Sans',sans-serif; font-size:clamp(30px,4.6vw,54px); line-height:1.22; letter-spacing:1px; color:#1A1613; margin-bottom:20px; text-wrap:balance;">物語は、時代を超えて<br>人の心を動かす。</h1>
+      <p style="font-size:16px; color:#5C5349; max-width:640px; line-height:1.9;">世界スピーチJPでは、チャンネルで紹介した人物伝の物語に加え、家族に受け継がれる記憶、戦争を生き抜いた体験、人生を変えた出来事など、心に残る実話を紹介していきます。</p>
+    </div>
+  </section>
 
-  <article class="wsjp-article" data-key="elon" style="display:none; position:relative; z-index:2;">
-    <header style="position:relative; min-height:320px; display:flex; align-items:flex-end; background:radial-gradient(circle at 75% 20%, #E0300E 0%, #B5200A 100%);">
-      <div style="position:absolute; inset:0; background:linear-gradient(180deg, rgba(26,22,19,0) 30%, rgba(26,22,19,0.55) 100%);"></div>
-      <div style="position:relative; z-index:2; max-width:760px; margin:0 auto; padding:54px 28px 40px; width:100%;">
-        <a href="#" class="wsjp-back" style="cursor:pointer; display:inline-flex; align-items:center; gap:8px; background:rgba(255,255,255,0.16); backdrop-filter:blur(6px); color:#fff; border:1px solid rgba(255,255,255,0.3); padding:8px 16px; border-radius:100px; font-size:13px; font-weight:700; margin-bottom:26px;">← 一覧へ戻る</a>
-        <div style="display:flex; align-items:center; gap:14px; margin-bottom:14px;">
-          <span style="font-size:54px; line-height:1; filter:drop-shadow(0 6px 14px rgba(0,0,0,0.3));">🚀</span>
-          <div><div style="font-family:'Noto Serif JP',serif; font-size:12px; font-weight:600; letter-spacing:3px; color:rgba(255,255,255,0.85);">其ノ一 ・ ELON MUSK</div></div>
+  <!-- CHANNEL STORIES -->
+  <section style="position:relative; z-index:2; max-width:1100px; margin:0 auto; padding:40px 28px 30px;">
+    <h2 style="font-family:'Black Han Sans',sans-serif; font-size:clamp(24px,3vw,34px); letter-spacing:0.5px; color:#1A1613; margin-bottom:8px;">チャンネル発の人物伝ストーリー</h2>
+    <p style="color:#6B6157; font-size:14px; margin-bottom:30px;">YouTubeの人物伝シリーズから生まれた、ブランドと創業者たちの物語。</p>
+    <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(290px,1fr)); gap:22px;">
+        <a href="#" class="wsjp-card" style="text-align:left; cursor:pointer; background:#fff; border:1px solid #EADFC9; border-radius:20px; overflow:hidden; box-shadow:0 1px 0 rgba(0,0,0,0.02); display:flex; flex-direction:column;">
+          <div style="position:relative; height:148px; display:flex; align-items:center; justify-content:center; background:radial-gradient(circle at 70% 25%, #1B6B50 0%, #0E4536 100%);">
+            <span style="font-size:52px; line-height:1; filter:drop-shadow(0 6px 14px rgba(0,0,0,0.3));">☕</span>
+            <span style="position:absolute; top:14px; left:16px; background:rgba(0,0,0,0.28); color:#fff; font-family:'Noto Serif JP',serif; font-size:11px; font-weight:600; letter-spacing:1.5px; padding:5px 11px; border-radius:100px; backdrop-filter:blur(4px);">ブランド物語</span>
+            <span style="position:absolute; top:14px; right:14px; background:rgba(255,255,255,0.16); color:#fff; font-size:10px; font-weight:700; letter-spacing:1px; padding:4px 9px; border-radius:100px; backdrop-filter:blur(4px);">近日公開</span>
+          </div>
+          <div style="padding:20px 22px 22px; display:flex; flex-direction:column; gap:9px; flex:1;">
+            <span style="font-family:'Noto Serif JP',serif; font-size:10px; font-weight:600; letter-spacing:2px; color:#E0300E;">人物伝</span>
+            <h3 style="font-family:'Black Han Sans',sans-serif; font-size:19px; letter-spacing:0.5px; color:#1A1613; line-height:1.35;">【第1話】スタバ誕生の物語</h3>
+            <p style="font-size:13px; color:#6B6157; line-height:1.75; flex:1;">世界で愛されるコーヒーブランド、スターバックス。その始まりは、今のようなおしゃれなカフェではありませんでした。</p>
+            <span style="margin-top:6px; display:inline-flex; align-items:center; gap:7px; font-size:13px; font-weight:700; color:#a99e8c;">読む <span style="color:#E0300E;">→</span></span>
+          </div>
+        </a>
+        <a href="#" class="wsjp-card" style="text-align:left; cursor:pointer; background:#fff; border:1px solid #EADFC9; border-radius:20px; overflow:hidden; box-shadow:0 1px 0 rgba(0,0,0,0.02); display:flex; flex-direction:column;">
+          <div style="position:relative; height:148px; display:flex; align-items:center; justify-content:center; background:radial-gradient(circle at 70% 25%, #2A3B6B 0%, #161E38 100%);">
+            <span style="font-size:52px; line-height:1; filter:drop-shadow(0 6px 14px rgba(0,0,0,0.3));">📟</span>
+            <span style="position:absolute; top:14px; left:16px; background:rgba(0,0,0,0.28); color:#fff; font-family:'Noto Serif JP',serif; font-size:11px; font-weight:600; letter-spacing:1.5px; padding:5px 11px; border-radius:100px; backdrop-filter:blur(4px);">復活の物語</span>
+            <span style="position:absolute; top:14px; right:14px; background:rgba(255,255,255,0.16); color:#fff; font-size:10px; font-weight:700; letter-spacing:1px; padding:4px 9px; border-radius:100px; backdrop-filter:blur(4px);">近日公開</span>
+          </div>
+          <div style="padding:20px 22px 22px; display:flex; flex-direction:column; gap:9px; flex:1;">
+            <span style="font-family:'Noto Serif JP',serif; font-size:10px; font-weight:600; letter-spacing:2px; color:#E0300E;">人物伝</span>
+            <h3 style="font-family:'Black Han Sans',sans-serif; font-size:19px; letter-spacing:0.5px; color:#1A1613; line-height:1.35;">【カシオ復活の物語】</h3>
+            <p style="font-size:13px; color:#6B6157; line-height:1.75; flex:1;">iPhoneに敗れた老舗メーカーは、どのようにして再び世界に存在感を示したのか。</p>
+            <span style="margin-top:6px; display:inline-flex; align-items:center; gap:7px; font-size:13px; font-weight:700; color:#a99e8c;">読む <span style="color:#E0300E;">→</span></span>
+          </div>
+        </a>
+        <a href="#" class="wsjp-card" style="text-align:left; cursor:pointer; background:#fff; border:1px solid #EADFC9; border-radius:20px; overflow:hidden; box-shadow:0 1px 0 rgba(0,0,0,0.02); display:flex; flex-direction:column;">
+          <div style="position:relative; height:148px; display:flex; align-items:center; justify-content:center; background:radial-gradient(circle at 70% 25%, #6B4A2B 0%, #463017 100%);">
+            <span style="font-size:52px; line-height:1; filter:drop-shadow(0 6px 14px rgba(0,0,0,0.3));">🧳</span>
+            <span style="position:absolute; top:14px; left:16px; background:rgba(0,0,0,0.28); color:#fff; font-family:'Noto Serif JP',serif; font-size:11px; font-weight:600; letter-spacing:1.5px; padding:5px 11px; border-radius:100px; backdrop-filter:blur(4px);">ブランド誕生</span>
+            <span style="position:absolute; top:14px; right:14px; background:rgba(255,255,255,0.16); color:#fff; font-size:10px; font-weight:700; letter-spacing:1px; padding:4px 9px; border-radius:100px; backdrop-filter:blur(4px);">近日公開</span>
+          </div>
+          <div style="padding:20px 22px 22px; display:flex; flex-direction:column; gap:9px; flex:1;">
+            <span style="font-family:'Noto Serif JP',serif; font-size:10px; font-weight:600; letter-spacing:2px; color:#E0300E;">人物伝</span>
+            <h3 style="font-family:'Black Han Sans',sans-serif; font-size:19px; letter-spacing:0.5px; color:#1A1613; line-height:1.35;">【ルイ・ヴィトンの原点】</h3>
+            <p style="font-size:13px; color:#6B6157; line-height:1.75; flex:1;">世界最高峰ブランドのひとつ、ルイ・ヴィトン。その始まりは、華やかな高級ブティックではなく、一人の少年の旅から始まりました。</p>
+            <span style="margin-top:6px; display:inline-flex; align-items:center; gap:7px; font-size:13px; font-weight:700; color:#a99e8c;">読む <span style="color:#E0300E;">→</span></span>
+          </div>
+        </a>
+        <a href="#" class="wsjp-card" style="text-align:left; cursor:pointer; background:#fff; border:1px solid #EADFC9; border-radius:20px; overflow:hidden; box-shadow:0 1px 0 rgba(0,0,0,0.02); display:flex; flex-direction:column;">
+          <div style="position:relative; height:148px; display:flex; align-items:center; justify-content:center; background:radial-gradient(circle at 70% 25%, #1E5B9C 0%, #143F6E 100%);">
+            <span style="font-size:52px; line-height:1; filter:drop-shadow(0 6px 14px rgba(0,0,0,0.3));">🪑</span>
+            <span style="position:absolute; top:14px; left:16px; background:rgba(0,0,0,0.28); color:#fff; font-family:'Noto Serif JP',serif; font-size:11px; font-weight:600; letter-spacing:1.5px; padding:5px 11px; border-radius:100px; backdrop-filter:blur(4px);">成功の裏側</span>
+            <span style="position:absolute; top:14px; right:14px; background:rgba(255,255,255,0.16); color:#fff; font-size:10px; font-weight:700; letter-spacing:1px; padding:4px 9px; border-radius:100px; backdrop-filter:blur(4px);">近日公開</span>
+          </div>
+          <div style="padding:20px 22px 22px; display:flex; flex-direction:column; gap:9px; flex:1;">
+            <span style="font-family:'Noto Serif JP',serif; font-size:10px; font-weight:600; letter-spacing:2px; color:#E0300E;">人物伝</span>
+            <h3 style="font-family:'Black Han Sans',sans-serif; font-size:19px; letter-spacing:0.5px; color:#1A1613; line-height:1.35;">IKEA成功の裏側</h3>
+            <p style="font-size:13px; color:#6B6157; line-height:1.75; flex:1;">小さなマッチ売りの少年から、世界的家具ブランドへ。IKEAはどのようにして世界中で愛される存在になったのか。</p>
+            <span style="margin-top:6px; display:inline-flex; align-items:center; gap:7px; font-size:13px; font-weight:700; color:#a99e8c;">読む <span style="color:#E0300E;">→</span></span>
+          </div>
+        </a>
+        <a href="rolex.html" class="wsjp-card" style="text-align:left; cursor:pointer; background:#fff; border:1px solid #EADFC9; border-radius:20px; overflow:hidden; box-shadow:0 1px 0 rgba(0,0,0,0.02); display:flex; flex-direction:column;">
+          <div style="position:relative; height:148px; display:flex; align-items:center; justify-content:center; background:radial-gradient(circle at 70% 25%, #1F4D3A 0%, #10271D 100%);">
+            <span style="font-size:52px; line-height:1; filter:drop-shadow(0 6px 14px rgba(0,0,0,0.3));">⌚</span>
+            <span style="position:absolute; top:14px; left:16px; background:rgba(0,0,0,0.28); color:#fff; font-family:'Noto Serif JP',serif; font-size:11px; font-weight:600; letter-spacing:1.5px; padding:5px 11px; border-radius:100px; backdrop-filter:blur(4px);">創業者物語</span>
+            
+          </div>
+          <div style="padding:20px 22px 22px; display:flex; flex-direction:column; gap:9px; flex:1;">
+            <span style="font-family:'Noto Serif JP',serif; font-size:10px; font-weight:600; letter-spacing:2px; color:#E0300E;">人物伝</span>
+            <h3 style="font-family:'Black Han Sans',sans-serif; font-size:19px; letter-spacing:0.5px; color:#1A1613; line-height:1.35;">時間の王者ロレックス</h3>
+            <p style="font-size:13px; color:#6B6157; line-height:1.75; flex:1;">孤児だった少年が、世界最高峰の時計ブランドをつくるまで。ロレックス創業者ハンス・ウイルスドルフの人生とブランド神話。</p>
+            <span style="margin-top:6px; display:inline-flex; align-items:center; gap:7px; font-size:13px; font-weight:700; color:#1A1613;">読む <span style="color:#E0300E;">→</span></span>
+          </div>
+        </a>
+        <a href="#" class="wsjp-card" style="text-align:left; cursor:pointer; background:#fff; border:1px solid #EADFC9; border-radius:20px; overflow:hidden; box-shadow:0 1px 0 rgba(0,0,0,0.02); display:flex; flex-direction:column;">
+          <div style="position:relative; height:148px; display:flex; align-items:center; justify-content:center; background:radial-gradient(circle at 70% 25%, #D9620E 0%, #9C4408 100%);">
+            <span style="font-size:52px; line-height:1; filter:drop-shadow(0 6px 14px rgba(0,0,0,0.3));">🐎</span>
+            <span style="position:absolute; top:14px; left:16px; background:rgba(0,0,0,0.28); color:#fff; font-family:'Noto Serif JP',serif; font-size:11px; font-weight:600; letter-spacing:1.5px; padding:5px 11px; border-radius:100px; backdrop-filter:blur(4px);">神話的ブランド</span>
+            <span style="position:absolute; top:14px; right:14px; background:rgba(255,255,255,0.16); color:#fff; font-size:10px; font-weight:700; letter-spacing:1px; padding:4px 9px; border-radius:100px; backdrop-filter:blur(4px);">近日公開</span>
+          </div>
+          <div style="padding:20px 22px 22px; display:flex; flex-direction:column; gap:9px; flex:1;">
+            <span style="font-family:'Noto Serif JP',serif; font-size:10px; font-weight:600; letter-spacing:2px; color:#E0300E;">人物伝</span>
+            <h3 style="font-family:'Black Han Sans',sans-serif; font-size:19px; letter-spacing:0.5px; color:#1A1613; line-height:1.35;">【エルメスの神話】</h3>
+            <p style="font-size:13px; color:#6B6157; line-height:1.75; flex:1;">なぜエルメスは世界中の人々を惹きつけるのか。一人の孤児だった少年の小さな革工房から始まった物語。</p>
+            <span style="margin-top:6px; display:inline-flex; align-items:center; gap:7px; font-size:13px; font-weight:700; color:#a99e8c;">読む <span style="color:#E0300E;">→</span></span>
+          </div>
+        </a>
+        <a href="#" class="wsjp-card" style="text-align:left; cursor:pointer; background:#fff; border:1px solid #EADFC9; border-radius:20px; overflow:hidden; box-shadow:0 1px 0 rgba(0,0,0,0.02); display:flex; flex-direction:column;">
+          <div style="position:relative; height:148px; display:flex; align-items:center; justify-content:center; background:radial-gradient(circle at 70% 25%, #1A1613 0%, #3A322A 100%);">
+            <span style="font-size:52px; line-height:1; filter:drop-shadow(0 6px 14px rgba(0,0,0,0.3));">🖤</span>
+            <span style="position:absolute; top:14px; left:16px; background:rgba(0,0,0,0.28); color:#fff; font-family:'Noto Serif JP',serif; font-size:11px; font-weight:600; letter-spacing:1.5px; padding:5px 11px; border-radius:100px; backdrop-filter:blur(4px);">人生とブランド</span>
+            <span style="position:absolute; top:14px; right:14px; background:rgba(255,255,255,0.16); color:#fff; font-size:10px; font-weight:700; letter-spacing:1px; padding:4px 9px; border-radius:100px; backdrop-filter:blur(4px);">近日公開</span>
+          </div>
+          <div style="padding:20px 22px 22px; display:flex; flex-direction:column; gap:9px; flex:1;">
+            <span style="font-family:'Noto Serif JP',serif; font-size:10px; font-weight:600; letter-spacing:2px; color:#E0300E;">人物伝</span>
+            <h3 style="font-family:'Black Han Sans',sans-serif; font-size:19px; letter-spacing:0.5px; color:#1A1613; line-height:1.35;">ココ・シャネルの光と影</h3>
+            <p style="font-size:13px; color:#6B6157; line-height:1.75; flex:1;">世界中の女性を魅了し続けるブランド、CHANEL。その裏には、孤児として育った少女の強さと孤独がありました。</p>
+            <span style="margin-top:6px; display:inline-flex; align-items:center; gap:7px; font-size:13px; font-weight:700; color:#a99e8c;">読む <span style="color:#E0300E;">→</span></span>
+          </div>
+        </a>
+    </div>
+  </section>
+
+  <!-- SUBMISSION -->
+  <section style="position:relative; z-index:2; max-width:1100px; margin:0 auto; padding:50px 28px;">
+    <div style="background:#1A1613; color:#F4EEE1; border-radius:24px; padding:clamp(28px,5vw,52px); position:relative; overflow:hidden;">
+      <div style="position:absolute; top:-100px; right:-100px; width:360px; height:360px; border-radius:50%; background:repeating-conic-gradient(from 0deg at 50% 50%, rgba(224,48,14,0.5) 0deg 3deg, transparent 3deg 11deg); opacity:0.14; animation:wsjp-sun 130s linear infinite;"></div>
+      <div style="position:relative; z-index:2; max-width:720px;">
+        <div style="display:flex; align-items:center; gap:10px; margin-bottom:14px;"><span style="width:26px; height:2px; background:#E0300E;"></span><span style="font-family:'Noto Serif JP',serif; font-size:12px; font-weight:600; letter-spacing:4px; color:#E0300E;">YOUR STORY ・ 物語投稿</span></div>
+        <h2 style="font-family:'Black Han Sans',sans-serif; font-size:clamp(24px,3.4vw,38px); letter-spacing:0.5px; line-height:1.3; margin-bottom:18px;">あなたの家族の物語を<br>聞かせてください</h2>
+        <p style="font-size:15px; color:#cabfae; line-height:1.95; margin-bottom:22px;">祖父母から聞いた戦争中の記憶、移住の物語、家族を支えた仕事、失敗から立ち上がった経験。そうした“普通の人の特別な物語”も、次の世代に残す価値があります。</p>
+        <div style="background:rgba(244,238,225,0.06); border:1px solid rgba(244,238,225,0.14); border-left:3px solid #E0300E; border-radius:12px; padding:16px 20px; margin-bottom:30px;">
+          <div style="font-family:'Noto Serif JP',serif; font-size:11px; letter-spacing:2px; color:#9a8f7d; margin-bottom:7px;">たとえば</div>
+          <p style="font-family:'Noto Serif JP',serif; font-size:16px; font-weight:500; line-height:1.85; color:#F4EEE1;">第二次世界大戦中、祖母がどのように子どもたちを食べさせ、生き抜いたのか。</p>
         </div>
-        <h2 style="font-family:'Black Han Sans',sans-serif; font-size:clamp(30px,4.6vw,50px); line-height:1.18; letter-spacing:0.5px; color:#fff; margin:0;">火星を夢見た男</h1>
-      </div>
-    </header>
-    <div style="max-width:720px; margin:0 auto; padding:44px 28px 30px;">
-      <a href="https://www.youtube.com/playlist?list=PL_ZdYnRs1lnjKZaVYk53ybnkjvd0vacmr" target="_blank" rel="noopener" style="display:flex; align-items:center; gap:14px; background:#1A1613; color:#fff; border-radius:16px; padding:16px 20px; margin-bottom:38px;">
-        <span style="display:inline-flex; align-items:center; justify-content:center; width:42px; height:42px; flex:none; background:#E0300E; border-radius:50%;"><svg viewBox="0 0 24 24" style="width:22px; height:22px; fill:#fff;"><path d="M8 5v14l11-7z"/></svg></span>
-        <span style="display:flex; flex-direction:column; gap:2px;">
-          <span style="font-size:11px; letter-spacing:2px; color:rgba(255,255,255,0.6); font-family:'Noto Serif JP',serif;">WATCH ON YOUTUBE</span>
-          <span style="font-weight:700; font-size:14.5px;">この人物伝を動画で見る</span>
-        </span>
-        <span style="margin-left:auto; color:rgba(255,255,255,0.5); font-size:20px;">↗</span>
-      </a>
-      <div style="font-family:'Noto Serif JP',serif; font-size:18px; line-height:2.05; color:#2a241e;">
-        <p style="font-size:20px; font-weight:600; color:#1A1613; margin-bottom:28px; line-height:1.9;">「失敗は選択肢のひとつだ。もし失敗していないなら、十分に挑戦していない証拠だ」——その言葉どおり、イーロン・マスクの人生は壮大な賭けの連続だった。</p>
-        <h2 style="font-family:'Black Han Sans',sans-serif; font-size:25px; letter-spacing:0.5px; color:#1A1613; margin:42px 0 16px; line-height:1.4;">南アフリカの少年時代</h2>
-        <p style="margin-bottom:24px;">1971年、南アフリカのプレトリアに生まれたイーロンは、内気で本ばかり読む少年だった。9歳で百科事典を読破し、12歳で自作のゲームを売って初めての収入を得る。いじめに苦しんだ少年時代の逃げ場は、いつも空想と科学だった。</p>
-        <p style="margin-bottom:24px;">17歳で単身カナダへ渡り、やがてアメリカへ。物理学と経済学を学びながら、彼は「人類の未来を本当に変えるもの」は何かを問い続けていた。インターネット、再生可能エネルギー、そして宇宙——答えはすでに見えていた。</p>
-        <h2 style="font-family:'Black Han Sans',sans-serif; font-size:25px; letter-spacing:0.5px; color:#1A1613; margin:42px 0 16px; line-height:1.4;">ゼロからの帝国</h2>
-        <p style="margin-bottom:24px;">弟とともに立ち上げた最初の会社を売却し、続くオンライン決済サービスは後のPayPalとなる。手にした資金を、彼は安全な投資ではなく、誰もが「不可能だ」と笑う事業——ロケットと電気自動車——につぎ込んだ。</p>
-        <blockquote style="margin:34px 0; padding:6px 0 6px 26px; border-left:4px solid #E0300E; font-size:23px; font-weight:600; color:#1A1613; line-height:1.7;">「何かが十分に重要なら、たとえ勝ち目が薄くても、やるべきなんだ」</blockquote>
-        <p style="margin-bottom:24px;">ロケットは三度連続で爆発し、会社は倒産寸前まで追い込まれた。それでも四度目の打ち上げが成功し、SpaceXは民間で初めて宇宙へ到達した企業となる。同じ頃、テスラもまた電気自動車を「未来の乗り物」から「現実の選択肢」へと変えていった。</p>
-        <h2 style="font-family:'Black Han Sans',sans-serif; font-size:25px; letter-spacing:0.5px; color:#1A1613; margin:42px 0 16px; line-height:1.4;">火星という約束</h2>
-        <p style="margin-bottom:24px;">彼の最終目標は一貫している——人類を複数の惑星に住む種にすること。荒唐無稽と笑われたその夢に、いま世界中の頭脳と資本が集まっている。火星を夢見た内気な少年は、人類の地図そのものを描き直そうとしている。</p>
-      </div>
-      <div style="margin-top:50px; padding-top:30px; border-top:1px solid #E6DCC8; display:flex; flex-wrap:wrap; gap:12px; align-items:center; justify-content:space-between;">
-        <a href="#" class="wsjp-back" style="cursor:pointer; display:inline-flex; align-items:center; gap:8px; background:transparent; color:#1A1613; border:1.5px solid #1A1613; padding:12px 22px; border-radius:100px; font-size:14px; font-weight:700;">← 一覧へ戻る</a>
-        <a href="https://www.youtube.com/@worldspeechjp" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:9px; white-space:nowrap; background:#E0300E; color:#fff; padding:12px 24px; border-radius:100px; font-weight:700; font-size:14px;"><svg viewBox="0 0 24 24" style="width:17px; height:17px; fill:currentColor;"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.7 15.5V8.5l6.3 3.5-6.3 3.5z"/></svg> チャンネル登録</a>
+        <a href="mailto:worldspeechjp@gmail.com?subject=%E4%B8%96%E7%95%8C%E3%82%B9%E3%83%94%E3%83%BC%E3%83%81JP%20%E7%89%A9%E8%AA%9E%E6%8A%95%E7%A8%BF" style="display:inline-flex; align-items:center; gap:9px; background:#E0300E; color:#fff; padding:15px 32px; border-radius:100px; font-weight:700; font-size:15px; box-shadow:0 12px 28px rgba(224,48,14,0.3);">✉️ 物語を送る</a>
       </div>
     </div>
-  </article>
-  <article class="wsjp-article" data-key="jobs" style="display:none; position:relative; z-index:2;">
-    <header style="position:relative; min-height:320px; display:flex; align-items:flex-end; background:radial-gradient(circle at 75% 20%, #1A1613 0%, #3a322a 100%);">
-      <div style="position:absolute; inset:0; background:linear-gradient(180deg, rgba(26,22,19,0) 30%, rgba(26,22,19,0.55) 100%);"></div>
-      <div style="position:relative; z-index:2; max-width:760px; margin:0 auto; padding:54px 28px 40px; width:100%;">
-        <a href="#" class="wsjp-back" style="cursor:pointer; display:inline-flex; align-items:center; gap:8px; background:rgba(255,255,255,0.16); backdrop-filter:blur(6px); color:#fff; border:1px solid rgba(255,255,255,0.3); padding:8px 16px; border-radius:100px; font-size:13px; font-weight:700; margin-bottom:26px;">← 一覧へ戻る</a>
-        <div style="display:flex; align-items:center; gap:14px; margin-bottom:14px;">
-          <span style="font-size:54px; line-height:1; filter:drop-shadow(0 6px 14px rgba(0,0,0,0.3));">🍎</span>
-          <div><div style="font-family:'Noto Serif JP',serif; font-size:12px; font-weight:600; letter-spacing:3px; color:rgba(255,255,255,0.85);">其ノ二 ・ STEVE JOBS</div></div>
-        </div>
-        <h2 style="font-family:'Black Han Sans',sans-serif; font-size:clamp(30px,4.6vw,50px); line-height:1.18; letter-spacing:0.5px; color:#fff; margin:0;">点と点をつなぐ者</h1>
+  </section>
+
+  <!-- PERMISSION + SELECTION -->
+  <section style="position:relative; z-index:2; max-width:1100px; margin:0 auto; padding:10px 28px 20px;">
+    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:22px;">
+      <div style="background:#fff; border:1px solid #EADFC9; border-radius:20px; padding:30px 28px;">
+        <div style="font-size:30px; margin-bottom:14px;">🤝</div>
+        <h3 style="font-family:'Black Han Sans',sans-serif; font-size:21px; letter-spacing:0.5px; color:#1A1613; margin-bottom:12px; line-height:1.4;">大切な物語を、丁寧に扱います</h3>
+        <p style="font-size:14px; color:#5C5349; line-height:1.95;">投稿いただいた物語を動画化する場合は、必ず事前に内容確認と許可をお願いしています。無断で公開することはありません。個人情報やご家族のプライバシーに配慮し、必要に応じて名前や場所を変更して紹介します。</p>
       </div>
-    </header>
-    <div style="max-width:720px; margin:0 auto; padding:44px 28px 30px;">
-      <a href="https://www.youtube.com/playlist?list=PL_ZdYnRs1lnjKZaVYk53ybnkjvd0vacmr" target="_blank" rel="noopener" style="display:flex; align-items:center; gap:14px; background:#1A1613; color:#fff; border-radius:16px; padding:16px 20px; margin-bottom:38px;">
-        <span style="display:inline-flex; align-items:center; justify-content:center; width:42px; height:42px; flex:none; background:#E0300E; border-radius:50%;"><svg viewBox="0 0 24 24" style="width:22px; height:22px; fill:#fff;"><path d="M8 5v14l11-7z"/></svg></span>
-        <span style="display:flex; flex-direction:column; gap:2px;">
-          <span style="font-size:11px; letter-spacing:2px; color:rgba(255,255,255,0.6); font-family:'Noto Serif JP',serif;">WATCH ON YOUTUBE</span>
-          <span style="font-weight:700; font-size:14.5px;">この人物伝を動画で見る</span>
-        </span>
-        <span style="margin-left:auto; color:rgba(255,255,255,0.5); font-size:20px;">↗</span>
-      </a>
-      <div style="font-family:'Noto Serif JP',serif; font-size:18px; line-height:2.05; color:#2a241e;">
-        <p style="font-size:20px; font-weight:600; color:#1A1613; margin-bottom:28px; line-height:1.9;">「ハングリーであれ、愚かであれ」——スタンフォードの卒業式で語られたその言葉は、ジョブズ自身の生き方そのものだった。</p>
-        <h2 style="font-family:'Black Han Sans',sans-serif; font-size:25px; letter-spacing:0.5px; color:#1A1613; margin:42px 0 16px; line-height:1.4;">養子に出された始まり</h2>
-        <p style="margin-bottom:24px;">1955年、生まれてすぐ養子に出されたスティーブは、カリフォルニアのガレージ文化のなかで育った。大学は半年で中退。しかし彼は、興味のあった授業——とりわけ美しい文字の書体を学ぶカリグラフィーの講義——にだけ、もぐり込み続けた。</p>
-        <blockquote style="margin:34px 0; padding:6px 0 6px 26px; border-left:4px solid #E0300E; font-size:23px; font-weight:600; color:#1A1613; line-height:1.7;">「将来を見て点をつなぐことはできない。点は過去を振り返ってしか、つなげない」</blockquote>
-        <p style="margin-bottom:24px;">一見無駄に思えたその学びは、十年後、世界で初めて美しいフォントを備えたパーソナルコンピュータとして結実する。</p>
-        <h2 style="font-family:'Black Han Sans',sans-serif; font-size:25px; letter-spacing:0.5px; color:#1A1613; margin:42px 0 16px; line-height:1.4;">追放、そして帰還</h2>
-        <p style="margin-bottom:24px;">21歳でAppleをガレージからスタートさせたジョブズは、瞬く間に時代の寵児となる。だが30歳のとき、自ら作った会社を追われる。どん底のなかで彼はNeXTとピクサーを育て、やがて「トイ・ストーリー」で映画の歴史をも塗り替えた。</p>
-        <p style="margin-bottom:24px;">12年後、瀕死のAppleに戻った彼は、iMac、iPod、iPhoneと、世界の暮らしを次々に作り変えていく。追放という最大の挫折こそが、彼を本当のクリエイターにした。</p>
-        <h2 style="font-family:'Black Han Sans',sans-serif; font-size:25px; letter-spacing:0.5px; color:#1A1613; margin:42px 0 16px; line-height:1.4;">残された問い</h2>
-        <p style="margin-bottom:24px;">「今日が人生最後の日だとしたら、今やろうとしていることをやりたいか?」——毎朝鏡に向かって問いかけたという。技術と人文科学が交わる場所に立ち続けた男の問いは、いまも私たちに向けられている。</p>
-      </div>
-      <div style="margin-top:50px; padding-top:30px; border-top:1px solid #E6DCC8; display:flex; flex-wrap:wrap; gap:12px; align-items:center; justify-content:space-between;">
-        <a href="#" class="wsjp-back" style="cursor:pointer; display:inline-flex; align-items:center; gap:8px; background:transparent; color:#1A1613; border:1.5px solid #1A1613; padding:12px 22px; border-radius:100px; font-size:14px; font-weight:700;">← 一覧へ戻る</a>
-        <a href="https://www.youtube.com/@worldspeechjp" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:9px; white-space:nowrap; background:#E0300E; color:#fff; padding:12px 24px; border-radius:100px; font-weight:700; font-size:14px;"><svg viewBox="0 0 24 24" style="width:17px; height:17px; fill:currentColor;"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.7 15.5V8.5l6.3 3.5-6.3 3.5z"/></svg> チャンネル登録</a>
+      <div style="background:#fff; border:1px solid #EADFC9; border-radius:20px; padding:30px 28px;">
+        <div style="font-size:30px; margin-bottom:14px;">🎬</div>
+        <h3 style="font-family:'Black Han Sans',sans-serif; font-size:21px; letter-spacing:0.5px; color:#1A1613; margin-bottom:12px; line-height:1.4;">動画化される物語について</h3>
+        <p style="font-size:14px; color:#5C5349; line-height:1.95;">すべての投稿が動画化されるわけではありません。意味があり、感情に残り、学びがあり、次の世代に伝える価値がある物語を中心に選ばせていただきます。</p>
       </div>
     </div>
-  </article>
-  <article class="wsjp-article" data-key="obama" style="display:none; position:relative; z-index:2;">
-    <header style="position:relative; min-height:320px; display:flex; align-items:flex-end; background:radial-gradient(circle at 75% 20%, #2b5c8a 0%, #1d3f60 100%);">
-      <div style="position:absolute; inset:0; background:linear-gradient(180deg, rgba(26,22,19,0) 30%, rgba(26,22,19,0.55) 100%);"></div>
-      <div style="position:relative; z-index:2; max-width:760px; margin:0 auto; padding:54px 28px 40px; width:100%;">
-        <a href="#" class="wsjp-back" style="cursor:pointer; display:inline-flex; align-items:center; gap:8px; background:rgba(255,255,255,0.16); backdrop-filter:blur(6px); color:#fff; border:1px solid rgba(255,255,255,0.3); padding:8px 16px; border-radius:100px; font-size:13px; font-weight:700; margin-bottom:26px;">← 一覧へ戻る</a>
-        <div style="display:flex; align-items:center; gap:14px; margin-bottom:14px;">
-          <span style="font-size:54px; line-height:1; filter:drop-shadow(0 6px 14px rgba(0,0,0,0.3));">✨</span>
-          <div><div style="font-family:'Noto Serif JP',serif; font-size:12px; font-weight:600; letter-spacing:3px; color:rgba(255,255,255,0.85);">其ノ三 ・ BARACK OBAMA</div></div>
-        </div>
-        <h2 style="font-family:'Black Han Sans',sans-serif; font-size:clamp(30px,4.6vw,50px); line-height:1.18; letter-spacing:0.5px; color:#fff; margin:0;">希望という名の演説</h1>
-      </div>
-    </header>
-    <div style="max-width:720px; margin:0 auto; padding:44px 28px 30px;">
-      <a href="https://www.youtube.com/playlist?list=PL_ZdYnRs1lnjKZaVYk53ybnkjvd0vacmr" target="_blank" rel="noopener" style="display:flex; align-items:center; gap:14px; background:#1A1613; color:#fff; border-radius:16px; padding:16px 20px; margin-bottom:38px;">
-        <span style="display:inline-flex; align-items:center; justify-content:center; width:42px; height:42px; flex:none; background:#E0300E; border-radius:50%;"><svg viewBox="0 0 24 24" style="width:22px; height:22px; fill:#fff;"><path d="M8 5v14l11-7z"/></svg></span>
-        <span style="display:flex; flex-direction:column; gap:2px;">
-          <span style="font-size:11px; letter-spacing:2px; color:rgba(255,255,255,0.6); font-family:'Noto Serif JP',serif;">WATCH ON YOUTUBE</span>
-          <span style="font-weight:700; font-size:14.5px;">この人物伝を動画で見る</span>
-        </span>
-        <span style="margin-left:auto; color:rgba(255,255,255,0.5); font-size:20px;">↗</span>
-      </a>
-      <div style="font-family:'Noto Serif JP',serif; font-size:18px; line-height:2.05; color:#2a241e;">
-        <p style="font-size:20px; font-weight:600; color:#1A1613; margin-bottom:28px; line-height:1.9;">「Yes, we can.」——たった三語が、ひとつの国の空気を変えた。バラク・オバマの物語は、言葉が持つ力の物語でもある。</p>
-        <h2 style="font-family:'Black Han Sans',sans-serif; font-size:25px; letter-spacing:0.5px; color:#1A1613; margin:42px 0 16px; line-height:1.4;">どこにも属さない少年</h2>
-        <p style="margin-bottom:24px;">ケニア人の父とアメリカ人の母のもと、1961年ハワイに生まれたバラクは、幼くして「自分は何者なのか」という問いと向き合った。インドネシアで暮らし、祖父母に育てられ、肌の色をめぐる葛藤を抱えながら、彼は本のなかに答えを探した。</p>
-        <h2 style="font-family:'Black Han Sans',sans-serif; font-size:25px; letter-spacing:0.5px; color:#1A1613; margin:42px 0 16px; line-height:1.4;">街頭からの出発</h2>
-        <p style="margin-bottom:24px;">名門大学を出た彼が選んだのは、高給の仕事ではなく、シカゴの貧しい地域での地道な組織活動だった。人々の声に耳を傾けるその日々が、後の政治家オバマの土台をつくった。</p>
-        <blockquote style="margin:34px 0; padding:6px 0 6px 26px; border-left:4px solid #E0300E; font-size:23px; font-weight:600; color:#1A1613; line-height:1.7;">「変化を待っていてはいけない。私たち自身が、待ち望んでいた変化なのだ」</blockquote>
-        <p style="margin-bottom:24px;">2004年の党大会での演説が、無名の地方議員を一夜にして全米のスターに変える。そして2008年、彼はアメリカ史上初の黒人大統領となった。</p>
-        <h2 style="font-family:'Black Han Sans',sans-serif; font-size:25px; letter-spacing:0.5px; color:#1A1613; margin:42px 0 16px; line-height:1.4;">言葉が残したもの</h2>
-        <p style="margin-bottom:24px;">政策の評価は分かれても、彼が証明したことは揺るがない——出自や肌の色ではなく、語る言葉とそこに込めた希望が、人を動かすのだということを。</p>
-      </div>
-      <div style="margin-top:50px; padding-top:30px; border-top:1px solid #E6DCC8; display:flex; flex-wrap:wrap; gap:12px; align-items:center; justify-content:space-between;">
-        <a href="#" class="wsjp-back" style="cursor:pointer; display:inline-flex; align-items:center; gap:8px; background:transparent; color:#1A1613; border:1.5px solid #1A1613; padding:12px 22px; border-radius:100px; font-size:14px; font-weight:700;">← 一覧へ戻る</a>
-        <a href="https://www.youtube.com/@worldspeechjp" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:9px; white-space:nowrap; background:#E0300E; color:#fff; padding:12px 24px; border-radius:100px; font-weight:700; font-size:14px;"><svg viewBox="0 0 24 24" style="width:17px; height:17px; fill:currentColor;"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.7 15.5V8.5l6.3 3.5-6.3 3.5z"/></svg> チャンネル登録</a>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section style="position:relative; z-index:2; background:#E0300E; color:#fff; margin-top:40px; padding:78px 28px; text-align:center; overflow:hidden;">
+    <div style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); width:620px; height:620px; border-radius:50%; background:repeating-conic-gradient(from 0deg at 50% 50%, rgba(255,255,255,0.07) 0deg 4deg, transparent 4deg 12deg); animation:wsjp-sun 140s linear infinite;"></div>
+    <div style="position:relative; z-index:2; max-width:680px; margin:0 auto;">
+      <h2 style="font-family:'Black Han Sans',sans-serif; font-size:clamp(26px,3.8vw,44px); letter-spacing:0.5px; margin-bottom:26px; line-height:1.3;">あなたの記憶が、<br>誰かの未来を照らす。</h2>
+      <div style="display:flex; gap:13px; flex-wrap:wrap; justify-content:center;">
+        <a href="mailto:worldspeechjp@gmail.com?subject=%E4%B8%96%E7%95%8C%E3%82%B9%E3%83%94%E3%83%BC%E3%83%81JP%20%E7%89%A9%E8%AA%9E%E6%8A%95%E7%A8%BF" style="display:inline-flex; align-items:center; gap:9px; background:#fff; color:#E0300E; padding:15px 30px; border-radius:100px; font-weight:700; font-size:15px; box-shadow:0 12px 28px rgba(0,0,0,0.16);">✉️ 物語を送る</a>
+        <a href="https://www.youtube.com/@worldspeechjp" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:9px; white-space:nowrap; background:transparent; color:#fff; padding:15px 28px; border-radius:100px; font-weight:700; font-size:15px; border:1.5px solid rgba(255,255,255,0.8);"><svg viewBox="0 0 24 24" style="width:17px; height:17px; fill:currentColor;"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.7 15.5V8.5l6.3 3.5-6.3 3.5z"/></svg> YouTubeを見る</a>
       </div>
     </div>
-  </article>
-  <article class="wsjp-article" data-key="trump" style="display:none; position:relative; z-index:2;">
-    <header style="position:relative; min-height:320px; display:flex; align-items:flex-end; background:radial-gradient(circle at 75% 20%, #b5252b 0%, #7d181c 100%);">
-      <div style="position:absolute; inset:0; background:linear-gradient(180deg, rgba(26,22,19,0) 30%, rgba(26,22,19,0.55) 100%);"></div>
-      <div style="position:relative; z-index:2; max-width:760px; margin:0 auto; padding:54px 28px 40px; width:100%;">
-        <a href="#" class="wsjp-back" style="cursor:pointer; display:inline-flex; align-items:center; gap:8px; background:rgba(255,255,255,0.16); backdrop-filter:blur(6px); color:#fff; border:1px solid rgba(255,255,255,0.3); padding:8px 16px; border-radius:100px; font-size:13px; font-weight:700; margin-bottom:26px;">← 一覧へ戻る</a>
-        <div style="display:flex; align-items:center; gap:14px; margin-bottom:14px;">
-          <span style="font-size:54px; line-height:1; filter:drop-shadow(0 6px 14px rgba(0,0,0,0.3));">🇺🇸</span>
-          <div><div style="font-family:'Noto Serif JP',serif; font-size:12px; font-weight:600; letter-spacing:3px; color:rgba(255,255,255,0.85);">其ノ四 ・ DONALD TRUMP</div></div>
-        </div>
-        <h2 style="font-family:'Black Han Sans',sans-serif; font-size:clamp(30px,4.6vw,50px); line-height:1.18; letter-spacing:0.5px; color:#fff; margin:0;">ディールの帝王</h1>
-      </div>
-    </header>
-    <div style="max-width:720px; margin:0 auto; padding:44px 28px 30px;">
-      <a href="https://www.youtube.com/playlist?list=PL_ZdYnRs1lnjKZaVYk53ybnkjvd0vacmr" target="_blank" rel="noopener" style="display:flex; align-items:center; gap:14px; background:#1A1613; color:#fff; border-radius:16px; padding:16px 20px; margin-bottom:38px;">
-        <span style="display:inline-flex; align-items:center; justify-content:center; width:42px; height:42px; flex:none; background:#E0300E; border-radius:50%;"><svg viewBox="0 0 24 24" style="width:22px; height:22px; fill:#fff;"><path d="M8 5v14l11-7z"/></svg></span>
-        <span style="display:flex; flex-direction:column; gap:2px;">
-          <span style="font-size:11px; letter-spacing:2px; color:rgba(255,255,255,0.6); font-family:'Noto Serif JP',serif;">WATCH ON YOUTUBE</span>
-          <span style="font-weight:700; font-size:14.5px;">この人物伝を動画で見る</span>
-        </span>
-        <span style="margin-left:auto; color:rgba(255,255,255,0.5); font-size:20px;">↗</span>
-      </a>
-      <div style="font-family:'Noto Serif JP',serif; font-size:18px; line-height:2.05; color:#2a241e;">
-        <p style="font-size:20px; font-weight:600; color:#1A1613; margin-bottom:28px; line-height:1.9;">「最高だ。誰も見たことのないほどに」——誇張とも自信ともつかぬ語り口で、ドナルド・トランプは世界の注目を独占し続けた。</p>
-        <h2 style="font-family:'Black Han Sans',sans-serif; font-size:25px; letter-spacing:0.5px; color:#1A1613; margin:42px 0 16px; line-height:1.4;">摩天楼の申し子</h2>
-        <p style="margin-bottom:24px;">1946年、ニューヨークの不動産業者の家に生まれたドナルドは、若くして父の事業を継ぎ、マンハッタンの一等地に自らの名を冠したタワーを次々と建てていった。</p>
-        <p style="margin-bottom:24px;">派手な暮らしぶりとメディアへの露出で、彼は「成功するビジネスマン」のアイコンとなる。自著『取引の技術』はベストセラーとなり、テレビ番組のホストとしても国民的な顔になった。</p>
-        <h2 style="font-family:'Black Han Sans',sans-serif; font-size:25px; letter-spacing:0.5px; color:#1A1613; margin:42px 0 16px; line-height:1.4;">政治への殴り込み</h2>
-        <p style="margin-bottom:24px;">政治経験ゼロ。専門家の予想をことごとく裏切り、2016年、彼は大統領の座を射止める。既存の政治の作法を無視するそのスタイルは、熱狂的な支持と激しい反発を同時に生んだ。</p>
-        <blockquote style="margin:34px 0; padding:6px 0 6px 26px; border-left:4px solid #E0300E; font-size:23px; font-weight:600; color:#1A1613; line-height:1.7;">「私は勝つために戦う。負けるために戦う人間などいない」</blockquote>
-        <p style="margin-bottom:24px;">賛否を超えて確かなのは、彼が政治とメディアの関係を、そして人々の語り方そのものを、決定的に変えてしまったということだ。</p>
-      </div>
-      <div style="margin-top:50px; padding-top:30px; border-top:1px solid #E6DCC8; display:flex; flex-wrap:wrap; gap:12px; align-items:center; justify-content:space-between;">
-        <a href="#" class="wsjp-back" style="cursor:pointer; display:inline-flex; align-items:center; gap:8px; background:transparent; color:#1A1613; border:1.5px solid #1A1613; padding:12px 22px; border-radius:100px; font-size:14px; font-weight:700;">← 一覧へ戻る</a>
-        <a href="https://www.youtube.com/@worldspeechjp" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:9px; white-space:nowrap; background:#E0300E; color:#fff; padding:12px 24px; border-radius:100px; font-weight:700; font-size:14px;"><svg viewBox="0 0 24 24" style="width:17px; height:17px; fill:currentColor;"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.7 15.5V8.5l6.3 3.5-6.3 3.5z"/></svg> チャンネル登録</a>
-      </div>
-    </div>
-  </article>
-  <article class="wsjp-article" data-key="gates" style="display:none; position:relative; z-index:2;">
-    <header style="position:relative; min-height:320px; display:flex; align-items:flex-end; background:radial-gradient(circle at 75% 20%, #1f7a8c 0%, #145561 100%);">
-      <div style="position:absolute; inset:0; background:linear-gradient(180deg, rgba(26,22,19,0) 30%, rgba(26,22,19,0.55) 100%);"></div>
-      <div style="position:relative; z-index:2; max-width:760px; margin:0 auto; padding:54px 28px 40px; width:100%;">
-        <a href="#" class="wsjp-back" style="cursor:pointer; display:inline-flex; align-items:center; gap:8px; background:rgba(255,255,255,0.16); backdrop-filter:blur(6px); color:#fff; border:1px solid rgba(255,255,255,0.3); padding:8px 16px; border-radius:100px; font-size:13px; font-weight:700; margin-bottom:26px;">← 一覧へ戻る</a>
-        <div style="display:flex; align-items:center; gap:14px; margin-bottom:14px;">
-          <span style="font-size:54px; line-height:1; filter:drop-shadow(0 6px 14px rgba(0,0,0,0.3));">💻</span>
-          <div><div style="font-family:'Noto Serif JP',serif; font-size:12px; font-weight:600; letter-spacing:3px; color:rgba(255,255,255,0.85);">其ノ五 ・ BILL GATES</div></div>
-        </div>
-        <h2 style="font-family:'Black Han Sans',sans-serif; font-size:clamp(30px,4.6vw,50px); line-height:1.18; letter-spacing:0.5px; color:#fff; margin:0;">すべての机にパソコンを</h1>
-      </div>
-    </header>
-    <div style="max-width:720px; margin:0 auto; padding:44px 28px 30px;">
-      <a href="https://www.youtube.com/playlist?list=PL_ZdYnRs1lnjKZaVYk53ybnkjvd0vacmr" target="_blank" rel="noopener" style="display:flex; align-items:center; gap:14px; background:#1A1613; color:#fff; border-radius:16px; padding:16px 20px; margin-bottom:38px;">
-        <span style="display:inline-flex; align-items:center; justify-content:center; width:42px; height:42px; flex:none; background:#E0300E; border-radius:50%;"><svg viewBox="0 0 24 24" style="width:22px; height:22px; fill:#fff;"><path d="M8 5v14l11-7z"/></svg></span>
-        <span style="display:flex; flex-direction:column; gap:2px;">
-          <span style="font-size:11px; letter-spacing:2px; color:rgba(255,255,255,0.6); font-family:'Noto Serif JP',serif;">WATCH ON YOUTUBE</span>
-          <span style="font-weight:700; font-size:14.5px;">この人物伝を動画で見る</span>
-        </span>
-        <span style="margin-left:auto; color:rgba(255,255,255,0.5); font-size:20px;">↗</span>
-      </a>
-      <div style="font-family:'Noto Serif JP',serif; font-size:18px; line-height:2.05; color:#2a241e;">
-        <p style="font-size:20px; font-weight:600; color:#1A1613; margin-bottom:28px; line-height:1.9;">「すべての家庭の、すべての机にコンピュータを」——若きビル・ゲイツが掲げた夢は、当時、誰もが笑う絵空事だった。</p>
-        <h2 style="font-family:'Black Han Sans',sans-serif; font-size:25px; letter-spacing:0.5px; color:#1A1613; margin:42px 0 16px; line-height:1.4;">夜を徹したコード</h2>
-        <p style="margin-bottom:24px;">1955年シアトル生まれ。13歳でコンピュータに出会ったビルは、夜な夜な学校の端末に通い詰めた。ハーバードに進むも中退し、親友ポール・アレンとマイクロソフトを創業する。</p>
-        <h2 style="font-family:'Black Han Sans',sans-serif; font-size:25px; letter-spacing:0.5px; color:#1A1613; margin:42px 0 16px; line-height:1.4;">OSという覇権</h2>
-        <p style="margin-bottom:24px;">彼の天才は技術だけでなく、ビジネスの構造を見抜く目にあった。IBMとの契約を足がかりに、WindowsはまたたくまにPCの標準となり、ビルは世界一の富豪へと駆け上がる。</p>
-        <blockquote style="margin:34px 0; padding:6px 0 6px 26px; border-left:4px solid #E0300E; font-size:23px; font-weight:600; color:#1A1613; line-height:1.7;">「成功を祝うのもいいが、もっと大切なのは失敗から学ぶことだ」</blockquote>
-        <h2 style="font-family:'Black Han Sans',sans-serif; font-size:25px; letter-spacing:0.5px; color:#1A1613; margin:42px 0 16px; line-height:1.4;">第二の人生</h2>
-        <p style="margin-bottom:24px;">頂点に立った彼は、やがて経営の第一線を退き、巨万の富を慈善事業へと注ぎ始める。感染症、貧困、教育——ビル&amp;メリンダ・ゲイツ財団を通じて、彼はいま「世界を救うコード」を書こうとしている。</p>
-      </div>
-      <div style="margin-top:50px; padding-top:30px; border-top:1px solid #E6DCC8; display:flex; flex-wrap:wrap; gap:12px; align-items:center; justify-content:space-between;">
-        <a href="#" class="wsjp-back" style="cursor:pointer; display:inline-flex; align-items:center; gap:8px; background:transparent; color:#1A1613; border:1.5px solid #1A1613; padding:12px 22px; border-radius:100px; font-size:14px; font-weight:700;">← 一覧へ戻る</a>
-        <a href="https://www.youtube.com/@worldspeechjp" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:9px; white-space:nowrap; background:#E0300E; color:#fff; padding:12px 24px; border-radius:100px; font-weight:700; font-size:14px;"><svg viewBox="0 0 24 24" style="width:17px; height:17px; fill:currentColor;"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.7 15.5V8.5l6.3 3.5-6.3 3.5z"/></svg> チャンネル登録</a>
-      </div>
-    </div>
-  </article>
-  <article class="wsjp-article" data-key="zuck" style="display:none; position:relative; z-index:2;">
-    <header style="position:relative; min-height:320px; display:flex; align-items:flex-end; background:radial-gradient(circle at 75% 20%, #3b5998 0%, #28406e 100%);">
-      <div style="position:absolute; inset:0; background:linear-gradient(180deg, rgba(26,22,19,0) 30%, rgba(26,22,19,0.55) 100%);"></div>
-      <div style="position:relative; z-index:2; max-width:760px; margin:0 auto; padding:54px 28px 40px; width:100%;">
-        <a href="#" class="wsjp-back" style="cursor:pointer; display:inline-flex; align-items:center; gap:8px; background:rgba(255,255,255,0.16); backdrop-filter:blur(6px); color:#fff; border:1px solid rgba(255,255,255,0.3); padding:8px 16px; border-radius:100px; font-size:13px; font-weight:700; margin-bottom:26px;">← 一覧へ戻る</a>
-        <div style="display:flex; align-items:center; gap:14px; margin-bottom:14px;">
-          <span style="font-size:54px; line-height:1; filter:drop-shadow(0 6px 14px rgba(0,0,0,0.3));">💬</span>
-          <div><div style="font-family:'Noto Serif JP',serif; font-size:12px; font-weight:600; letter-spacing:3px; color:rgba(255,255,255,0.85);">其ノ六 ・ MARK ZUCKERBERG</div></div>
-        </div>
-        <h2 style="font-family:'Black Han Sans',sans-serif; font-size:clamp(30px,4.6vw,50px); line-height:1.18; letter-spacing:0.5px; color:#fff; margin:0;">世界をつないだ寮の一室</h1>
-      </div>
-    </header>
-    <div style="max-width:720px; margin:0 auto; padding:44px 28px 30px;">
-      <a href="https://www.youtube.com/playlist?list=PL_ZdYnRs1lnjKZaVYk53ybnkjvd0vacmr" target="_blank" rel="noopener" style="display:flex; align-items:center; gap:14px; background:#1A1613; color:#fff; border-radius:16px; padding:16px 20px; margin-bottom:38px;">
-        <span style="display:inline-flex; align-items:center; justify-content:center; width:42px; height:42px; flex:none; background:#E0300E; border-radius:50%;"><svg viewBox="0 0 24 24" style="width:22px; height:22px; fill:#fff;"><path d="M8 5v14l11-7z"/></svg></span>
-        <span style="display:flex; flex-direction:column; gap:2px;">
-          <span style="font-size:11px; letter-spacing:2px; color:rgba(255,255,255,0.6); font-family:'Noto Serif JP',serif;">WATCH ON YOUTUBE</span>
-          <span style="font-weight:700; font-size:14.5px;">この人物伝を動画で見る</span>
-        </span>
-        <span style="margin-left:auto; color:rgba(255,255,255,0.5); font-size:20px;">↗</span>
-      </a>
-      <div style="font-family:'Noto Serif JP',serif; font-size:18px; line-height:2.05; color:#2a241e;">
-        <p style="font-size:20px; font-weight:600; color:#1A1613; margin-bottom:28px; line-height:1.9;">「完璧を目指すより、まず終わらせろ」——ハーバードの寮で生まれた小さなサイトは、やがて人類のつながり方そのものを変えた。</p>
-        <h2 style="font-family:'Black Han Sans',sans-serif; font-size:25px; letter-spacing:0.5px; color:#1A1613; margin:42px 0 16px; line-height:1.4;">寮で生まれたネットワーク</h2>
-        <p style="margin-bottom:24px;">2004年、ハーバード大学の学生だったマークは、学内の学生名簿をオンライン化したサービスを立ち上げる。それは瞬く間に他大学へ、そして世界へと広がっていった。</p>
-        <p style="margin-bottom:24px;">彼は大学を中退し、シリコンバレーへ。20歳の若者が率いる小さな会社は、わずか数年で世界最大のソーシャルネットワークへと成長する。</p>
-        <blockquote style="margin:34px 0; padding:6px 0 6px 26px; border-left:4px solid #E0300E; font-size:23px; font-weight:600; color:#1A1613; line-height:1.7;">「最大のリスクは、リスクをまったく取らないことだ」</blockquote>
-        <h2 style="font-family:'Black Han Sans',sans-serif; font-size:25px; letter-spacing:0.5px; color:#1A1613; margin:42px 0 16px; line-height:1.4;">つながりの光と影</h2>
-        <p style="margin-bottom:24px;">数十億の人々をつないだ一方で、プライバシーや情報のあり方をめぐる重い問いも背負うことになった。いま彼は次なる賭け——仮想空間「メタバース」——に社運を投じている。</p>
-      </div>
-      <div style="margin-top:50px; padding-top:30px; border-top:1px solid #E6DCC8; display:flex; flex-wrap:wrap; gap:12px; align-items:center; justify-content:space-between;">
-        <a href="#" class="wsjp-back" style="cursor:pointer; display:inline-flex; align-items:center; gap:8px; background:transparent; color:#1A1613; border:1.5px solid #1A1613; padding:12px 22px; border-radius:100px; font-size:14px; font-weight:700;">← 一覧へ戻る</a>
-        <a href="https://www.youtube.com/@worldspeechjp" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:9px; white-space:nowrap; background:#E0300E; color:#fff; padding:12px 24px; border-radius:100px; font-weight:700; font-size:14px;"><svg viewBox="0 0 24 24" style="width:17px; height:17px; fill:currentColor;"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.7 15.5V8.5l6.3 3.5-6.3 3.5z"/></svg> チャンネル登録</a>
-      </div>
-    </div>
-  </article>
-  <article class="wsjp-article" data-key="bezos" style="display:none; position:relative; z-index:2;">
-    <header style="position:relative; min-height:320px; display:flex; align-items:flex-end; background:radial-gradient(circle at 75% 20%, #e0820e 0%, #a85e07 100%);">
-      <div style="position:absolute; inset:0; background:linear-gradient(180deg, rgba(26,22,19,0) 30%, rgba(26,22,19,0.55) 100%);"></div>
-      <div style="position:relative; z-index:2; max-width:760px; margin:0 auto; padding:54px 28px 40px; width:100%;">
-        <a href="#" class="wsjp-back" style="cursor:pointer; display:inline-flex; align-items:center; gap:8px; background:rgba(255,255,255,0.16); backdrop-filter:blur(6px); color:#fff; border:1px solid rgba(255,255,255,0.3); padding:8px 16px; border-radius:100px; font-size:13px; font-weight:700; margin-bottom:26px;">← 一覧へ戻る</a>
-        <div style="display:flex; align-items:center; gap:14px; margin-bottom:14px;">
-          <span style="font-size:54px; line-height:1; filter:drop-shadow(0 6px 14px rgba(0,0,0,0.3));">📦</span>
-          <div><div style="font-family:'Noto Serif JP',serif; font-size:12px; font-weight:600; letter-spacing:3px; color:rgba(255,255,255,0.85);">其ノ七 ・ JEFF BEZOS</div></div>
-        </div>
-        <h2 style="font-family:'Black Han Sans',sans-serif; font-size:clamp(30px,4.6vw,50px); line-height:1.18; letter-spacing:0.5px; color:#fff; margin:0;">地球最大の店</h1>
-      </div>
-    </header>
-    <div style="max-width:720px; margin:0 auto; padding:44px 28px 30px;">
-      <a href="https://www.youtube.com/playlist?list=PL_ZdYnRs1lnjKZaVYk53ybnkjvd0vacmr" target="_blank" rel="noopener" style="display:flex; align-items:center; gap:14px; background:#1A1613; color:#fff; border-radius:16px; padding:16px 20px; margin-bottom:38px;">
-        <span style="display:inline-flex; align-items:center; justify-content:center; width:42px; height:42px; flex:none; background:#E0300E; border-radius:50%;"><svg viewBox="0 0 24 24" style="width:22px; height:22px; fill:#fff;"><path d="M8 5v14l11-7z"/></svg></span>
-        <span style="display:flex; flex-direction:column; gap:2px;">
-          <span style="font-size:11px; letter-spacing:2px; color:rgba(255,255,255,0.6); font-family:'Noto Serif JP',serif;">WATCH ON YOUTUBE</span>
-          <span style="font-weight:700; font-size:14.5px;">この人物伝を動画で見る</span>
-        </span>
-        <span style="margin-left:auto; color:rgba(255,255,255,0.5); font-size:20px;">↗</span>
-      </a>
-      <div style="font-family:'Noto Serif JP',serif; font-size:18px; line-height:2.05; color:#2a241e;">
-        <p style="font-size:20px; font-weight:600; color:#1A1613; margin-bottom:28px; line-height:1.9;">「私は80歳になったとき、挑戦しなかったことを後悔したくなかった」——ジェフ・ベゾスは、その「後悔最小化」の計算からすべてを始めた。</p>
-        <h2 style="font-family:'Black Han Sans',sans-serif; font-size:25px; letter-spacing:0.5px; color:#1A1613; margin:42px 0 16px; line-height:1.4;">ガレージから始まった本屋</h2>
-        <p style="margin-bottom:24px;">1994年、ウォール街の安定した職を辞したジェフは、ガレージでオンライン書店を開く。インターネットの爆発的な成長を確信した、人生最大の賭けだった。</p>
-        <p style="margin-bottom:24px;">「本」から始まった店は、やがて「あらゆるもの」を売る場所へ。彼は短期の利益より、徹底した顧客第一と長期の視点を貫いた。</p>
-        <blockquote style="margin:34px 0; padding:6px 0 6px 26px; border-left:4px solid #E0300E; font-size:23px; font-weight:600; color:#1A1613; line-height:1.7;">「あなたのブランドとは、あなたがいない場所で人々が語ることだ」</blockquote>
-        <h2 style="font-family:'Black Han Sans',sans-serif; font-size:25px; letter-spacing:0.5px; color:#1A1613; margin:42px 0 16px; line-height:1.4;">宇宙という次の荷物</h2>
-        <p style="margin-bottom:24px;">世界一の富豪となったいま、彼の視線は宇宙へと向かう。自ら設立したロケット企業で、彼は「重工業を地球の外へ」という、もうひとつの壮大な配送に挑んでいる。</p>
-      </div>
-      <div style="margin-top:50px; padding-top:30px; border-top:1px solid #E6DCC8; display:flex; flex-wrap:wrap; gap:12px; align-items:center; justify-content:space-between;">
-        <a href="#" class="wsjp-back" style="cursor:pointer; display:inline-flex; align-items:center; gap:8px; background:transparent; color:#1A1613; border:1.5px solid #1A1613; padding:12px 22px; border-radius:100px; font-size:14px; font-weight:700;">← 一覧へ戻る</a>
-        <a href="https://www.youtube.com/@worldspeechjp" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:9px; white-space:nowrap; background:#E0300E; color:#fff; padding:12px 24px; border-radius:100px; font-weight:700; font-size:14px;"><svg viewBox="0 0 24 24" style="width:17px; height:17px; fill:currentColor;"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.7 15.5V8.5l6.3 3.5-6.3 3.5z"/></svg> チャンネル登録</a>
-      </div>
-    </div>
-  </article>
-  <article class="wsjp-article" data-key="putin" style="display:none; position:relative; z-index:2;">
-    <header style="position:relative; min-height:320px; display:flex; align-items:flex-end; background:radial-gradient(circle at 75% 20%, #4a4a4a 0%, #2b2b2b 100%);">
-      <div style="position:absolute; inset:0; background:linear-gradient(180deg, rgba(26,22,19,0) 30%, rgba(26,22,19,0.55) 100%);"></div>
-      <div style="position:relative; z-index:2; max-width:760px; margin:0 auto; padding:54px 28px 40px; width:100%;">
-        <a href="#" class="wsjp-back" style="cursor:pointer; display:inline-flex; align-items:center; gap:8px; background:rgba(255,255,255,0.16); backdrop-filter:blur(6px); color:#fff; border:1px solid rgba(255,255,255,0.3); padding:8px 16px; border-radius:100px; font-size:13px; font-weight:700; margin-bottom:26px;">← 一覧へ戻る</a>
-        <div style="display:flex; align-items:center; gap:14px; margin-bottom:14px;">
-          <span style="font-size:54px; line-height:1; filter:drop-shadow(0 6px 14px rgba(0,0,0,0.3));">🇷🇺</span>
-          <div><div style="font-family:'Noto Serif JP',serif; font-size:12px; font-weight:600; letter-spacing:3px; color:rgba(255,255,255,0.85);">其ノ八 ・ VLADIMIR PUTIN</div></div>
-        </div>
-        <h2 style="font-family:'Black Han Sans',sans-serif; font-size:clamp(30px,4.6vw,50px); line-height:1.18; letter-spacing:0.5px; color:#fff; margin:0;">沈黙の戦略家</h1>
-      </div>
-    </header>
-    <div style="max-width:720px; margin:0 auto; padding:44px 28px 30px;">
-      <a href="https://www.youtube.com/playlist?list=PL_ZdYnRs1lnjKZaVYk53ybnkjvd0vacmr" target="_blank" rel="noopener" style="display:flex; align-items:center; gap:14px; background:#1A1613; color:#fff; border-radius:16px; padding:16px 20px; margin-bottom:38px;">
-        <span style="display:inline-flex; align-items:center; justify-content:center; width:42px; height:42px; flex:none; background:#E0300E; border-radius:50%;"><svg viewBox="0 0 24 24" style="width:22px; height:22px; fill:#fff;"><path d="M8 5v14l11-7z"/></svg></span>
-        <span style="display:flex; flex-direction:column; gap:2px;">
-          <span style="font-size:11px; letter-spacing:2px; color:rgba(255,255,255,0.6); font-family:'Noto Serif JP',serif;">WATCH ON YOUTUBE</span>
-          <span style="font-weight:700; font-size:14.5px;">この人物伝を動画で見る</span>
-        </span>
-        <span style="margin-left:auto; color:rgba(255,255,255,0.5); font-size:20px;">↗</span>
-      </a>
-      <div style="font-family:'Noto Serif JP',serif; font-size:18px; line-height:2.05; color:#2a241e;">
-        <p style="font-size:20px; font-weight:600; color:#1A1613; margin-bottom:28px; line-height:1.9;">多くを語らず、表情を崩さない——ウラジーミル・プーチンは、寡黙さそのものを力に変えてきた指導者である。</p>
-        <h2 style="font-family:'Black Han Sans',sans-serif; font-size:25px; letter-spacing:0.5px; color:#1A1613; margin:42px 0 16px; line-height:1.4;">レニングラードの裏町から</h2>
-        <p style="margin-bottom:24px;">1952年、戦後の貧しいレニングラードに生まれたウラジーミルは、路地裏でのケンカと柔道で鍛えられた。やがて彼は諜報機関の一員となり、東ドイツで冷戦の最前線に立つ。</p>
-        <h2 style="font-family:'Black Han Sans',sans-serif; font-size:25px; letter-spacing:0.5px; color:#1A1613; margin:42px 0 16px; line-height:1.4;">権力への階段</h2>
-        <p style="margin-bottom:24px;">ソ連崩壊後の混乱のなか、彼は地方行政から中央政界へと異例の速さで駆け上がる。1999年末、彼は大国の実権を握ることになった。</p>
-        <blockquote style="margin:34px 0; padding:6px 0 6px 26px; border-left:4px solid #E0300E; font-size:23px; font-weight:600; color:#1A1613; line-height:1.7;">「弱い者は殴られる。だから強くあらねばならない」</blockquote>
-        <p style="margin-bottom:24px;">資源を背景にした強硬な外交と、徹底した統制。その評価は世界で激しく分かれるが、彼が現代を読み解く上で避けて通れない人物であることは、誰も否定できない。</p>
-      </div>
-      <div style="margin-top:50px; padding-top:30px; border-top:1px solid #E6DCC8; display:flex; flex-wrap:wrap; gap:12px; align-items:center; justify-content:space-between;">
-        <a href="#" class="wsjp-back" style="cursor:pointer; display:inline-flex; align-items:center; gap:8px; background:transparent; color:#1A1613; border:1.5px solid #1A1613; padding:12px 22px; border-radius:100px; font-size:14px; font-weight:700;">← 一覧へ戻る</a>
-        <a href="https://www.youtube.com/@worldspeechjp" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:9px; white-space:nowrap; background:#E0300E; color:#fff; padding:12px 24px; border-radius:100px; font-weight:700; font-size:14px;"><svg viewBox="0 0 24 24" style="width:17px; height:17px; fill:currentColor;"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.7 15.5V8.5l6.3 3.5-6.3 3.5z"/></svg> チャンネル登録</a>
-      </div>
-    </div>
-  </article>
-  <article class="wsjp-article" data-key="xi" style="display:none; position:relative; z-index:2;">
-    <header style="position:relative; min-height:320px; display:flex; align-items:flex-end; background:radial-gradient(circle at 75% 20%, #9c1f1f 0%, #6b1414 100%);">
-      <div style="position:absolute; inset:0; background:linear-gradient(180deg, rgba(26,22,19,0) 30%, rgba(26,22,19,0.55) 100%);"></div>
-      <div style="position:relative; z-index:2; max-width:760px; margin:0 auto; padding:54px 28px 40px; width:100%;">
-        <a href="#" class="wsjp-back" style="cursor:pointer; display:inline-flex; align-items:center; gap:8px; background:rgba(255,255,255,0.16); backdrop-filter:blur(6px); color:#fff; border:1px solid rgba(255,255,255,0.3); padding:8px 16px; border-radius:100px; font-size:13px; font-weight:700; margin-bottom:26px;">← 一覧へ戻る</a>
-        <div style="display:flex; align-items:center; gap:14px; margin-bottom:14px;">
-          <span style="font-size:54px; line-height:1; filter:drop-shadow(0 6px 14px rgba(0,0,0,0.3));">🇨🇳</span>
-          <div><div style="font-family:'Noto Serif JP',serif; font-size:12px; font-weight:600; letter-spacing:3px; color:rgba(255,255,255,0.85);">其ノ九 ・ XI JINPING</div></div>
-        </div>
-        <h2 style="font-family:'Black Han Sans',sans-serif; font-size:clamp(30px,4.6vw,50px); line-height:1.18; letter-spacing:0.5px; color:#fff; margin:0;">下放された皇子</h1>
-      </div>
-    </header>
-    <div style="max-width:720px; margin:0 auto; padding:44px 28px 30px;">
-      <a href="https://www.youtube.com/playlist?list=PL_ZdYnRs1lnjKZaVYk53ybnkjvd0vacmr" target="_blank" rel="noopener" style="display:flex; align-items:center; gap:14px; background:#1A1613; color:#fff; border-radius:16px; padding:16px 20px; margin-bottom:38px;">
-        <span style="display:inline-flex; align-items:center; justify-content:center; width:42px; height:42px; flex:none; background:#E0300E; border-radius:50%;"><svg viewBox="0 0 24 24" style="width:22px; height:22px; fill:#fff;"><path d="M8 5v14l11-7z"/></svg></span>
-        <span style="display:flex; flex-direction:column; gap:2px;">
-          <span style="font-size:11px; letter-spacing:2px; color:rgba(255,255,255,0.6); font-family:'Noto Serif JP',serif;">WATCH ON YOUTUBE</span>
-          <span style="font-weight:700; font-size:14.5px;">この人物伝を動画で見る</span>
-        </span>
-        <span style="margin-left:auto; color:rgba(255,255,255,0.5); font-size:20px;">↗</span>
-      </a>
-      <div style="font-family:'Noto Serif JP',serif; font-size:18px; line-height:2.05; color:#2a241e;">
-        <p style="font-size:20px; font-weight:600; color:#1A1613; margin-bottom:28px; line-height:1.9;">かつて農村の洞穴で暮らした青年が、いまや世界第二の経済大国を率いている。習近平の道のりは、忍耐と再起の物語だ。</p>
-        <h2 style="font-family:'Black Han Sans',sans-serif; font-size:25px; letter-spacing:0.5px; color:#1A1613; margin:42px 0 16px; line-height:1.4;">洞穴での七年</h2>
-        <p style="margin-bottom:24px;">革命の功労者を父に持ちながら、文化大革命で一家は失脚。少年だった習近平は農村へ「下放」され、洞穴(ヤオトン)で暮らしながら過酷な労働に明け暮れた。</p>
-        <p style="margin-bottom:24px;">その七年間で、彼は土地と人々の現実を肌で知る。後に彼が語る「初心」は、この時代に根を持つといわれる。</p>
-        <h2 style="font-family:'Black Han Sans',sans-serif; font-size:25px; letter-spacing:0.5px; color:#1A1613; margin:42px 0 16px; line-height:1.4;">一歩ずつ、頂へ</h2>
-        <p style="margin-bottom:24px;">地方の末端の職から、彼は着実に階段を登った。派手さよりも組織を固める手腕で信頼を積み、2012年、ついに国の最高指導者の座に就く。</p>
-        <blockquote style="margin:34px 0; padding:6px 0 6px 26px; border-left:4px solid #E0300E; font-size:23px; font-weight:600; color:#1A1613; line-height:1.7;">「空談は国を誤らせ、実務こそが国を興す」</blockquote>
-        <p style="margin-bottom:24px;">「中華民族の偉大な復興」を掲げる彼の舵取りは、いまや世界全体の行方を左右している。</p>
-      </div>
-      <div style="margin-top:50px; padding-top:30px; border-top:1px solid #E6DCC8; display:flex; flex-wrap:wrap; gap:12px; align-items:center; justify-content:space-between;">
-        <a href="#" class="wsjp-back" style="cursor:pointer; display:inline-flex; align-items:center; gap:8px; background:transparent; color:#1A1613; border:1.5px solid #1A1613; padding:12px 22px; border-radius:100px; font-size:14px; font-weight:700;">← 一覧へ戻る</a>
-        <a href="https://www.youtube.com/@worldspeechjp" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:9px; white-space:nowrap; background:#E0300E; color:#fff; padding:12px 24px; border-radius:100px; font-weight:700; font-size:14px;"><svg viewBox="0 0 24 24" style="width:17px; height:17px; fill:currentColor;"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.7 15.5V8.5l6.3 3.5-6.3 3.5z"/></svg> チャンネル登録</a>
-      </div>
-    </div>
-  </article>
+  </section>
 
   <footer style="position:relative; z-index:2; background:#F4EEE1; border-top:1px solid #E6DCC8; color:#8a8073; padding:30px 28px; text-align:center; font-size:13px;">
     <div style="max-width:1100px; margin:0 auto; display:flex; flex-wrap:wrap; gap:8px 16px; align-items:center; justify-content:center;">
       <span style="font-family:'Black Han Sans',sans-serif; color:#1A1613; font-size:15px;">世界スピーチ<span style="color:#E0300E;">JP</span></span>
-      <span style="opacity:0.5;">｜</span><span>人物伝ブログ</span>
+      <span style="opacity:0.5;">｜</span><span>物語アーカイブ</span>
       <span style="opacity:0.5;">｜</span><span>© 2026</span>
       <span style="opacity:0.5;">｜</span><span>AI生成コンテンツ・パロディ目的</span>
     </div>
@@ -546,25 +232,6 @@
 
 <script>
 (function () {
-  var index = document.getElementById('wsjp-index');
-  var articles = document.querySelectorAll('.wsjp-article');
-  function show(key) {
-    var found = false;
-    articles.forEach(function (a) {
-      var match = a.dataset.key === key;
-      a.style.display = match ? 'block' : 'none';
-      if (match) found = true;
-    });
-    index.style.display = found ? 'none' : 'block';
-    window.scrollTo(0, 0);
-  }
-  function route() { show((location.hash || '').replace(/^#/, '')); }
-  document.querySelectorAll('.wsjp-back').forEach(function (b) {
-    b.addEventListener('click', function (e) { e.preventDefault(); location.hash = ''; });
-  });
-  window.addEventListener('hashchange', route);
-  route();
-
   var burger = document.querySelector('.wsjp-burger');
   var navlinks = document.querySelector('.wsjp-navlinks');
   if (burger && navlinks) {
@@ -577,8 +244,7 @@
     });
     window.addEventListener('resize', function () {
       if (window.innerWidth > 640 && navlinks.classList.contains('open')) {
-        navlinks.classList.remove('open');
-        burger.setAttribute('aria-expanded', 'false');
+        navlinks.classList.remove('open'); burger.setAttribute('aria-expanded', 'false');
       }
     });
   }
