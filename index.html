@@ -170,7 +170,7 @@
 
       <button id="wsjp-generate" class="wsjp-gen" style="width:100%; background:#1A1613; color:#fff; border:none; padding:17px; border-radius:14px; font-family:'Black Han Sans',sans-serif; font-size:18px; letter-spacing:1px; cursor:pointer; display:flex; align-items:center; justify-content:center; gap:10px; transition:transform .12s, background .2s;">🎙 AI吹替を生成する</button>
 
-      <div id="wsjp-output" style="display:none; margin-top:22px; background:#FBF7EE; border:1px solid #EADFC9; border-left:4px solid #E0300E; border-radius:14px; padding:20px 22px;">
+      <div id="wsjp-output" style="display:none; margin-top:22px; background:#FBF7EE; border:1px solid #EADFC9; border-left:4px solid #E0300E; border-radius:14px; padding:22px 24px;">
         <div id="wsjp-loading" style="display:none; align-items:center; gap:12px; color:#9a8f7d; font-size:13px; font-weight:700; letter-spacing:1px;">
           <span style="display:inline-flex; gap:5px;">
             <span style="width:7px; height:7px; border-radius:50%; background:#E0300E; animation:wsjp-dot 1.2s infinite;"></span>
@@ -179,9 +179,25 @@
           </span>
           AIが吹替を生成中…
         </div>
+        <div id="wsjp-error" style="display:none; font-size:14px; font-weight:700; color:#E0300E;"></div>
         <div id="wsjp-result" style="display:none;">
-          <span id="wsjp-result-label" style="display:inline-block; background:#1A1613; color:#fff; font-family:'Noto Serif JP',serif; font-size:11px; font-weight:700; letter-spacing:2px; padding:4px 11px; border-radius:100px; margin-bottom:13px;"></span>
-          <p id="wsjp-result-text" style="font-size:17px; line-height:1.9; color:#1A1613;"></p>
+          <span style="display:inline-flex; align-items:center; gap:6px; white-space:nowrap; background:#E0300E; color:#fff; font-family:'Noto Serif JP',serif; font-size:11px; font-weight:700; letter-spacing:2px; padding:5px 12px; border-radius:100px; margin-bottom:18px;">🎙 AI吹替デモ</span>
+          <div style="margin-bottom:16px;">
+            <div style="font-family:'Noto Serif JP',serif; font-size:11px; font-weight:600; letter-spacing:2px; color:#9a8f7d; margin-bottom:5px;">入力</div>
+            <p id="wsjp-result-input" style="font-size:15px; line-height:1.7; color:#5C5349; word-break:break-word;"></p>
+          </div>
+          <div style="margin-bottom:16px; padding:16px 18px; background:#fff; border:1px solid #EADFC9; border-radius:12px;">
+            <div style="font-family:'Noto Serif JP',serif; font-size:11px; font-weight:600; letter-spacing:2px; color:#E0300E; margin-bottom:7px;">日本語吹替</div>
+            <p id="wsjp-result-text" style="font-family:'Noto Serif JP',serif; font-size:19px; line-height:1.9; font-weight:600; color:#1A1613;"></p>
+          </div>
+          <div style="display:flex; align-items:center; gap:8px; margin-bottom:16px;">
+            <span style="font-family:'Noto Serif JP',serif; font-size:11px; font-weight:600; letter-spacing:2px; color:#9a8f7d;">スタイル</span>
+            <span id="wsjp-result-style" style="display:inline-block; background:#1A1613; color:#fff; font-size:12px; font-weight:700; padding:4px 12px; border-radius:100px;"></span>
+          </div>
+          <p style="display:flex; align-items:flex-start; gap:7px; font-size:11.5px; line-height:1.6; color:#a99e8c; border-top:1px dashed #E0D6C2; padding-top:13px;">
+            <span style="flex:none;">⚠️</span>
+            <span>これはAIによる演出デモであり、本人の公式音声ではありません。</span>
+          </p>
         </div>
       </div>
     </div>
@@ -290,40 +306,68 @@
   var outBox = document.getElementById('wsjp-output');
   var loading = document.getElementById('wsjp-loading');
   var result = document.getElementById('wsjp-result');
-  var resultLabel = document.getElementById('wsjp-result-label');
+  var errorBox = document.getElementById('wsjp-error');
+  var resInput = document.getElementById('wsjp-result-input');
   var resultText = document.getElementById('wsjp-result-text');
+  var resStyle = document.getElementById('wsjp-result-style');
 
-  function hideOutput() { outBox.style.display = 'none'; loading.style.display = 'none'; result.style.display = 'none'; }
+  function hideOutput() {
+    outBox.style.display = 'none';
+    loading.style.display = 'none';
+    result.style.display = 'none';
+    errorBox.style.display = 'none';
+  }
+
+  // Simulated demo dictionary — no real AI, no real voices. Front-end demo only.
+  var DEMO = {
+    elon:  { style: 'イーロン・マスク風', hello: 'こんにちは。未来は、私たちが作るものです。', generic: 'なるほど、興味深い。これは人類にとって大きな一歩になるかもしれません。' },
+    trump: { style: 'ドナルド・トランプ風', hello: 'こんにちは。これは本当に素晴らしい日本語吹替です。', generic: '本当に素晴らしい。誰もこんなことはできなかった。最高です。' },
+    obama: { style: 'バラク・オバマ風', hello: 'こんにちは。私たちは、言葉の力で未来を変えることができます。', generic: '私たちには、より良い未来を選ぶ力があります。共に前へ進みましょう。' },
+    jobs:  { style: 'スティーブ・ジョブズ風', hello: 'こんにちは。シンプルで、美しく、心に残る言葉を届けましょう。', generic: 'シンプルであることは、究極の洗練です。ひとつ、お見せしましょう。' }
+  };
+
+  function buildDub(text, key) {
+    var d = DEMO[key] || DEMO.elon;
+    if (/^\s*hello\s*$/i.test(text)) return d.hello;
+    return d.generic;
+  }
 
   genBtn.addEventListener('click', function () {
     var text = (input.value || '').trim();
-    if (!text) { input.focus(); return; }
+    // 2. Empty input validation
+    if (!text) {
+      outBox.style.display = 'block';
+      loading.style.display = 'none';
+      result.style.display = 'none';
+      errorBox.textContent = 'セリフを入力してください。';
+      errorBox.style.display = 'block';
+      input.focus();
+      return;
+    }
+    // 3. Loading state
+    errorBox.style.display = 'none';
     outBox.style.display = 'block';
     loading.style.display = 'flex';
     result.style.display = 'none';
-    // Static public site has no AI backend — degrade gracefully with a friendly message.
-    var hasAI = (typeof window !== 'undefined' && window.claude && typeof window.claude.complete === 'function');
-    if (!hasAI) {
-      setTimeout(function () {
-        loading.style.display = 'none';
-        resultLabel.textContent = selected.label;
-        resultText.textContent = '「' + selected.name + '」の日本語吹替は、YouTubeチャンネルで公開中です。実際の吹替は動画でお楽しみください！（このページのライブAIデモは準備中です）';
-        result.style.display = 'block';
-      }, 650);
-      return;
-    }
-    var prompt = 'あなたは世界スピーチJPのAI吹替エンジンです。以下のセリフを「' + selected.name + '」のキャラクターとして、自然で流暢な日本語に2〜4文で吹替してください。日本語のみで返答。\n\n入力：「' + text + '」';
-    window.claude.complete(prompt).then(function (out) {
+    var originalLabel = genBtn.textContent;
+    genBtn.textContent = '生成中...';
+    genBtn.disabled = true;
+    genBtn.style.opacity = '0.7';
+    genBtn.style.cursor = 'wait';
+
+    setTimeout(function () {
+      // 4–6. Simulated demo output
+      var d = DEMO[selected.key] || DEMO.elon;
+      resInput.textContent = text;
+      resultText.textContent = buildDub(text, selected.key);
+      resStyle.textContent = d.style;
       loading.style.display = 'none';
-      resultLabel.textContent = selected.label;
-      resultText.textContent = (out || '').trim() || 'エラーが発生しました。';
       result.style.display = 'block';
-    }).catch(function () {
-      loading.style.display = 'none';
-      resultLabel.textContent = 'ERROR';
-      resultText.textContent = 'AIの生成に失敗しました。もう一度お試しください。';
-      result.style.display = 'block';
-    });
+      genBtn.textContent = originalLabel;
+      genBtn.disabled = false;
+      genBtn.style.opacity = '';
+      genBtn.style.cursor = 'pointer';
+    }, 1000);
   });
 
   var burger = document.querySelector('.wsjp-burger');
