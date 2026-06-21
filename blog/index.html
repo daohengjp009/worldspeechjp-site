@@ -5,7 +5,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>人物伝ブログ — 世界スピーチJP</title>
 <meta name="description" content="世界を変えた人物たちの生涯と名言を、日本語でじっくり読む人物伝シリーズ。">
+<link rel="canonical" href="https://www.worldspeechjp.com/blog/">
 <link rel="icon" href="/assets/avatar.jpg">
+<link rel="apple-touch-icon" href="/assets/avatar.jpg">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.worldspeechjp.com/blog/">
+<meta property="og:title" content="人物伝ブログ — 世界スピーチJP">
+<meta property="og:description" content="世界を変えた人物たちの生涯と名言を、日本語でじっくり読む人物伝シリーズ。">
+<meta property="og:image" content="https://www.worldspeechjp.com/assets/avatar.jpg">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:site_name" content="世界スピーチJP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="人物伝ブログ — 世界スピーチJP">
+<meta name="twitter:description" content="世界を変えた人物たちの生涯と名言を、日本語でじっくり読むシリーズ。">
+<meta name="twitter:image" content="https://www.worldspeechjp.com/assets/avatar.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+JP:wght@400;500;700;900&family=Noto+Serif+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -18,6 +31,15 @@
   @keyframes wsjp-sun { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
   .wsjp-card:hover { transform: translateY(-4px); box-shadow: 0 20px 40px -22px rgba(26,22,19,0.4) !important; }
   .wsjp-article { animation: wsjp-up .4s ease both; }
+  .wsjp-burger { display:none; align-items:center; justify-content:center; width:42px; height:42px; border:none; background:transparent; cursor:pointer; color:#1A1613; }
+  .wsjp-burger svg { width:26px; height:26px; }
+  @media (max-width: 640px) {
+    .wsjp-burger { display:inline-flex; }
+    .wsjp-navlinks { display:none; position:absolute; top:100%; left:0; right:0; flex-direction:column; align-items:stretch !important; gap:6px !important; background:rgba(244,238,225,0.98); backdrop-filter:blur(12px); padding:14px 22px 20px; border-bottom:1px solid #E6DCC8; box-shadow:0 14px 28px rgba(26,22,19,0.12); }
+    .wsjp-navlinks.open { display:flex; }
+    .wsjp-navlinks > a { padding:11px 6px; font-size:15px !important; border-bottom:1px solid #EADFC9; }
+    .wsjp-navlinks > a:last-child { border-bottom:none; justify-content:center; margin-top:8px; }
+  }
 </style>
 </head>
 <body>
@@ -27,12 +49,15 @@
 
   <nav style="position:sticky; top:0; z-index:50; background:rgba(244,238,225,0.86); backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); border-bottom:1px solid #E6DCC8;">
     <div style="height:4px; background:#E0300E;"></div>
-    <div style="max-width:1100px; margin:0 auto; padding:13px 28px; display:flex; align-items:center; justify-content:space-between; gap:16px;">
+    <div style="position:relative; max-width:1100px; margin:0 auto; padding:13px 28px; display:flex; align-items:center; justify-content:space-between; gap:16px;">
       <a href="/" style="display:flex; align-items:center; gap:13px;">
         <img src="/assets/avatar.jpg" alt="世界スピーチJP" width="46" height="46" style="width:46px; height:46px; border-radius:50%; object-fit:cover; box-shadow:0 0 0 2px #E0300E, 0 4px 12px rgba(26,22,19,0.14);">
         <span style="font-family:'Black Han Sans',sans-serif; font-size:19px; letter-spacing:0.5px; color:#1A1613; white-space:nowrap;">世界スピーチ<span style="color:#E0300E;">JP</span></span>
       </a>
-      <div style="display:flex; align-items:center; gap:20px;">
+      <button class="wsjp-burger" type="button" aria-label="メニュー" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/></svg>
+      </button>
+      <div class="wsjp-navlinks" style="display:flex; align-items:center; gap:20px;">
         <a href="/" style="font-size:13px; font-weight:700; letter-spacing:0.5px; color:#6B6157;">ホーム</a>
         <a href="/tools/" style="font-size:13px; font-weight:700; letter-spacing:0.5px; color:#6B6157;">ツール</a>
         <a href="/#demo" style="font-size:13px; font-weight:700; letter-spacing:0.5px; color:#6B6157;">吹替デモ</a>
@@ -182,7 +207,7 @@
           <span style="font-size:54px; line-height:1; filter:drop-shadow(0 6px 14px rgba(0,0,0,0.3));">🚀</span>
           <div><div style="font-family:'Noto Serif JP',serif; font-size:12px; font-weight:600; letter-spacing:3px; color:rgba(255,255,255,0.85);">其ノ一 ・ ELON MUSK</div></div>
         </div>
-        <h1 style="font-family:'Black Han Sans',sans-serif; font-size:clamp(30px,4.6vw,50px); line-height:1.18; letter-spacing:0.5px; color:#fff;">火星を夢見た男</h1>
+        <h2 style="font-family:'Black Han Sans',sans-serif; font-size:clamp(30px,4.6vw,50px); line-height:1.18; letter-spacing:0.5px; color:#fff; margin:0;">火星を夢見た男</h1>
       </div>
     </header>
     <div style="max-width:720px; margin:0 auto; padding:44px 28px 30px;">
@@ -221,7 +246,7 @@
           <span style="font-size:54px; line-height:1; filter:drop-shadow(0 6px 14px rgba(0,0,0,0.3));">🍎</span>
           <div><div style="font-family:'Noto Serif JP',serif; font-size:12px; font-weight:600; letter-spacing:3px; color:rgba(255,255,255,0.85);">其ノ二 ・ STEVE JOBS</div></div>
         </div>
-        <h1 style="font-family:'Black Han Sans',sans-serif; font-size:clamp(30px,4.6vw,50px); line-height:1.18; letter-spacing:0.5px; color:#fff;">点と点をつなぐ者</h1>
+        <h2 style="font-family:'Black Han Sans',sans-serif; font-size:clamp(30px,4.6vw,50px); line-height:1.18; letter-spacing:0.5px; color:#fff; margin:0;">点と点をつなぐ者</h1>
       </div>
     </header>
     <div style="max-width:720px; margin:0 auto; padding:44px 28px 30px;">
@@ -260,7 +285,7 @@
           <span style="font-size:54px; line-height:1; filter:drop-shadow(0 6px 14px rgba(0,0,0,0.3));">✨</span>
           <div><div style="font-family:'Noto Serif JP',serif; font-size:12px; font-weight:600; letter-spacing:3px; color:rgba(255,255,255,0.85);">其ノ三 ・ BARACK OBAMA</div></div>
         </div>
-        <h1 style="font-family:'Black Han Sans',sans-serif; font-size:clamp(30px,4.6vw,50px); line-height:1.18; letter-spacing:0.5px; color:#fff;">希望という名の演説</h1>
+        <h2 style="font-family:'Black Han Sans',sans-serif; font-size:clamp(30px,4.6vw,50px); line-height:1.18; letter-spacing:0.5px; color:#fff; margin:0;">希望という名の演説</h1>
       </div>
     </header>
     <div style="max-width:720px; margin:0 auto; padding:44px 28px 30px;">
@@ -298,7 +323,7 @@
           <span style="font-size:54px; line-height:1; filter:drop-shadow(0 6px 14px rgba(0,0,0,0.3));">🇺🇸</span>
           <div><div style="font-family:'Noto Serif JP',serif; font-size:12px; font-weight:600; letter-spacing:3px; color:rgba(255,255,255,0.85);">其ノ四 ・ DONALD TRUMP</div></div>
         </div>
-        <h1 style="font-family:'Black Han Sans',sans-serif; font-size:clamp(30px,4.6vw,50px); line-height:1.18; letter-spacing:0.5px; color:#fff;">ディールの帝王</h1>
+        <h2 style="font-family:'Black Han Sans',sans-serif; font-size:clamp(30px,4.6vw,50px); line-height:1.18; letter-spacing:0.5px; color:#fff; margin:0;">ディールの帝王</h1>
       </div>
     </header>
     <div style="max-width:720px; margin:0 auto; padding:44px 28px 30px;">
@@ -335,7 +360,7 @@
           <span style="font-size:54px; line-height:1; filter:drop-shadow(0 6px 14px rgba(0,0,0,0.3));">💻</span>
           <div><div style="font-family:'Noto Serif JP',serif; font-size:12px; font-weight:600; letter-spacing:3px; color:rgba(255,255,255,0.85);">其ノ五 ・ BILL GATES</div></div>
         </div>
-        <h1 style="font-family:'Black Han Sans',sans-serif; font-size:clamp(30px,4.6vw,50px); line-height:1.18; letter-spacing:0.5px; color:#fff;">すべての机にパソコンを</h1>
+        <h2 style="font-family:'Black Han Sans',sans-serif; font-size:clamp(30px,4.6vw,50px); line-height:1.18; letter-spacing:0.5px; color:#fff; margin:0;">すべての机にパソコンを</h1>
       </div>
     </header>
     <div style="max-width:720px; margin:0 auto; padding:44px 28px 30px;">
@@ -372,7 +397,7 @@
           <span style="font-size:54px; line-height:1; filter:drop-shadow(0 6px 14px rgba(0,0,0,0.3));">💬</span>
           <div><div style="font-family:'Noto Serif JP',serif; font-size:12px; font-weight:600; letter-spacing:3px; color:rgba(255,255,255,0.85);">其ノ六 ・ MARK ZUCKERBERG</div></div>
         </div>
-        <h1 style="font-family:'Black Han Sans',sans-serif; font-size:clamp(30px,4.6vw,50px); line-height:1.18; letter-spacing:0.5px; color:#fff;">世界をつないだ寮の一室</h1>
+        <h2 style="font-family:'Black Han Sans',sans-serif; font-size:clamp(30px,4.6vw,50px); line-height:1.18; letter-spacing:0.5px; color:#fff; margin:0;">世界をつないだ寮の一室</h1>
       </div>
     </header>
     <div style="max-width:720px; margin:0 auto; padding:44px 28px 30px;">
@@ -408,7 +433,7 @@
           <span style="font-size:54px; line-height:1; filter:drop-shadow(0 6px 14px rgba(0,0,0,0.3));">📦</span>
           <div><div style="font-family:'Noto Serif JP',serif; font-size:12px; font-weight:600; letter-spacing:3px; color:rgba(255,255,255,0.85);">其ノ七 ・ JEFF BEZOS</div></div>
         </div>
-        <h1 style="font-family:'Black Han Sans',sans-serif; font-size:clamp(30px,4.6vw,50px); line-height:1.18; letter-spacing:0.5px; color:#fff;">地球最大の店</h1>
+        <h2 style="font-family:'Black Han Sans',sans-serif; font-size:clamp(30px,4.6vw,50px); line-height:1.18; letter-spacing:0.5px; color:#fff; margin:0;">地球最大の店</h1>
       </div>
     </header>
     <div style="max-width:720px; margin:0 auto; padding:44px 28px 30px;">
@@ -444,7 +469,7 @@
           <span style="font-size:54px; line-height:1; filter:drop-shadow(0 6px 14px rgba(0,0,0,0.3));">🇷🇺</span>
           <div><div style="font-family:'Noto Serif JP',serif; font-size:12px; font-weight:600; letter-spacing:3px; color:rgba(255,255,255,0.85);">其ノ八 ・ VLADIMIR PUTIN</div></div>
         </div>
-        <h1 style="font-family:'Black Han Sans',sans-serif; font-size:clamp(30px,4.6vw,50px); line-height:1.18; letter-spacing:0.5px; color:#fff;">沈黙の戦略家</h1>
+        <h2 style="font-family:'Black Han Sans',sans-serif; font-size:clamp(30px,4.6vw,50px); line-height:1.18; letter-spacing:0.5px; color:#fff; margin:0;">沈黙の戦略家</h1>
       </div>
     </header>
     <div style="max-width:720px; margin:0 auto; padding:44px 28px 30px;">
@@ -480,7 +505,7 @@
           <span style="font-size:54px; line-height:1; filter:drop-shadow(0 6px 14px rgba(0,0,0,0.3));">🇨🇳</span>
           <div><div style="font-family:'Noto Serif JP',serif; font-size:12px; font-weight:600; letter-spacing:3px; color:rgba(255,255,255,0.85);">其ノ九 ・ XI JINPING</div></div>
         </div>
-        <h1 style="font-family:'Black Han Sans',sans-serif; font-size:clamp(30px,4.6vw,50px); line-height:1.18; letter-spacing:0.5px; color:#fff;">下放された皇子</h1>
+        <h2 style="font-family:'Black Han Sans',sans-serif; font-size:clamp(30px,4.6vw,50px); line-height:1.18; letter-spacing:0.5px; color:#fff; margin:0;">下放された皇子</h1>
       </div>
     </header>
     <div style="max-width:720px; margin:0 auto; padding:44px 28px 30px;">
@@ -539,6 +564,18 @@
   });
   window.addEventListener('hashchange', route);
   route();
+
+  var burger = document.querySelector('.wsjp-burger');
+  var navlinks = document.querySelector('.wsjp-navlinks');
+  if (burger && navlinks) {
+    burger.addEventListener('click', function () {
+      var open = navlinks.classList.toggle('open');
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    navlinks.addEventListener('click', function (e) {
+      if (e.target.closest('a')) { navlinks.classList.remove('open'); burger.setAttribute('aria-expanded', 'false'); }
+    });
+  }
 })();
 </script>
 </body>
