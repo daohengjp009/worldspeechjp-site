@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>物語を送る — 世界スピーチJP</title>
-<meta name="description" content="あなたの経験を、世界スピーチJPにシェアしませんか。投稿の流れ、許可の仕組み、プライバシー・匿名化、健康に関する注意について説明します。投稿はGoogleフォームから受け付けます。">
+<title>あなたの物語を聞かせてください — 世界スピーチJP</title>
+<meta name="description" content="世界スピーチJPは、次の世代に残したい実話を募集しています。家族の記憶、人生の転機、苦しかった経験、そこから見つけた希望。準備ができたら、フォームから物語を送ってください。許可なく公開することはありません。">
 <meta name="robots" content="noindex">
 <link rel="icon" href="/assets/avatar.jpg">
 <link rel="apple-touch-icon" href="/assets/avatar.jpg">
 <meta property="og:type" content="website">
-<meta property="og:title" content="物語を送る — 世界スピーチJP">
-<meta property="og:description" content="あなたの経験が、誰かの希望になるかもしれません。投稿の流れと、許可・プライバシーの仕組みについて。">
+<meta property="og:title" content="あなたの物語を聞かせてください — 世界スピーチJP">
+<meta property="og:description" content="その経験は、誰かの希望になるかもしれません。次の世代に残したい実話を募集しています。">
 <meta property="og:locale" content="ja_JP">
 <meta property="og:site_name" content="世界スピーチJP">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,6 +24,8 @@
   .wsjp-link:hover { color:#1A1613 !important; }
   .wsjp-btn { transition: transform .16s, box-shadow .16s; }
   .wsjp-btn:hover { transform: translateY(-2px); box-shadow: 0 14px 30px -10px rgba(224,48,14,0.4) !important; }
+  .wsjp-card { transition: transform .16s, box-shadow .16s, border-color .16s; }
+  .wsjp-card:hover { transform: translateY(-3px); box-shadow: 0 18px 38px -22px rgba(26,22,19,0.4); border-color:#E0C9A8; }
   .wsjp-burger { display:none; align-items:center; justify-content:center; width:42px; height:42px; border:none; background:transparent; cursor:pointer; color:#1A1613; }
   .wsjp-burger svg { width:26px; height:26px; }
   @media (max-width: 640px) {
@@ -54,202 +56,179 @@
       <div class="wsjp-navlinks" style="display:flex; align-items:center; gap:20px;">
         <a href="/" class="wsjp-link" style="font-size:13px; font-weight:700; letter-spacing:0.5px; color:#6B6157;">ホーム</a>
         <a href="/blog/" class="wsjp-link" style="font-size:13px; font-weight:700; letter-spacing:0.5px; color:#6B6157; white-space:nowrap;">物語アーカイブ</a>
+        <a href="/how.html" class="wsjp-link" style="font-size:13px; font-weight:700; letter-spacing:0.5px; color:#6B6157;">仕組み</a>
         <a href="/tools/" class="wsjp-link" style="font-size:13px; font-weight:700; letter-spacing:0.5px; color:#6B6157;">ツール</a>
         <a href="https://www.youtube.com/@worldspeechjp" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:7px; white-space:nowrap; background:#E0300E; color:#fff; padding:9px 17px; border-radius:100px; font-size:13px; font-weight:700; box-shadow:0 4px 14px rgba(224,48,14,0.32);"><svg viewBox="0 0 24 24" style="width:17px; height:17px; fill:currentColor;"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.7 15.5V8.5l6.3 3.5-6.3 3.5z"/></svg> 登録</a>
       </div>
     </div>
   </nav>
 
-  <!-- HERO -->
-  <header style="position:relative; overflow:hidden; background:radial-gradient(circle at 82% 14%, #E0300E 0%, #B5200A 60%, #8C1707 100%); color:#F4EEE1;">
-    <div style="position:absolute; top:-60px; right:-90px; width:380px; height:380px; border-radius:50%; border:2px dashed rgba(244,238,225,0.16);"></div>
-    <div style="position:relative; z-index:2; max-width:820px; margin:0 auto; padding:54px 28px 56px; width:100%;">
-      <div style="display:inline-flex; align-items:center; gap:10px; margin-bottom:20px;">
-        <span style="width:26px; height:2px; background:rgba(255,255,255,0.7);"></span>
-        <span style="font-family:'Noto Serif JP',serif; font-size:12px; font-weight:600; letter-spacing:4px; color:rgba(255,255,255,0.85);">SHARE YOUR STORY</span>
+  <!-- 1. HERO -->
+  <header style="position:relative; overflow:hidden; background:linear-gradient(178deg, #FBF6EB 0%, #F4EEE1 100%); border-bottom:1px solid #E6DCC8;">
+    <div style="position:absolute; top:-200px; right:-160px; width:560px; height:560px; border-radius:50%; background:radial-gradient(circle, rgba(224,48,14,0.07) 0%, rgba(224,48,14,0) 70%); pointer-events:none;"></div>
+    <div style="position:relative; z-index:2; max-width:780px; margin:0 auto; padding:64px 28px 64px; width:100%; text-align:center;">
+      <div style="display:inline-flex; align-items:center; gap:10px; margin-bottom:22px;">
+        <span style="width:26px; height:2px; background:#E0300E;"></span>
+        <span style="font-family:'Noto Serif JP',serif; font-size:12px; font-weight:600; letter-spacing:4px; color:#E0300E;">SHARE YOUR STORY</span>
+        <span style="width:26px; height:2px; background:#E0300E;"></span>
       </div>
-      <h1 style="font-family:'Black Han Sans',sans-serif; font-size:clamp(30px,5vw,52px); line-height:1.22; letter-spacing:0.5px; margin-bottom:18px;">あなたの経験が、<br>誰かの希望になるかもしれません。</h1>
-      <p style="font-family:'Noto Serif JP',serif; font-size:clamp(16px,2.2vw,20px); font-weight:500; color:rgba(244,238,225,0.9); line-height:1.85; max-width:560px;">忘れられそうな物語を、次の世代へ。あなたの体験や想いを、世界スピーチJPにシェアしてみませんか。</p>
-      <a href="#submit" class="wsjp-btn" style="display:inline-flex; align-items:center; gap:9px; background:#fff; color:#1A1613; padding:15px 30px; border-radius:100px; font-weight:700; font-size:15px; margin-top:30px;">物語を送る →</a>
+      <h1 style="font-family:'Black Han Sans',sans-serif; font-size:clamp(30px,5.2vw,54px); line-height:1.3; letter-spacing:0.5px; color:#1A1613; margin-bottom:22px;">あなたの物語を<br>聞かせてください</h1>
+      <p style="font-family:'Noto Serif JP',serif; font-size:clamp(15px,1.9vw,18px); font-weight:500; color:#5C5349; line-height:2.0; max-width:600px; margin:0 auto;">その経験は、誰かの希望になるかもしれません。家族の記憶、人生の転機、苦しかった経験、そこから見つけた希望。世界スピーチJPでは、次の世代に残したい実話を募集しています。</p>
+      <div style="display:flex; flex-wrap:wrap; gap:13px; justify-content:center; margin-top:34px;">
+        <a href="#submit" class="wsjp-btn" style="display:inline-flex; align-items:center; gap:9px; background:#E0300E; color:#fff; padding:16px 32px; border-radius:100px; font-weight:700; font-size:15px; box-shadow:0 12px 28px -10px rgba(224,48,14,0.5);">✉️ 投稿フォームを開く</a>
+        <a href="/how.html" class="wsjp-btn" style="display:inline-flex; align-items:center; gap:9px; background:transparent; color:#1A1613; border:1.5px solid #1A1613; padding:15px 28px; border-radius:100px; font-weight:700; font-size:15px;">仕組みを確認する →</a>
+      </div>
     </div>
   </header>
 
-  <main style="position:relative; z-index:2; max-width:820px; margin:0 auto; padding:48px 28px 20px; display:flex; flex-direction:column; gap:44px;">
+  <main style="position:relative; z-index:2; max-width:880px; margin:0 auto; padding:56px 28px 20px; display:flex; flex-direction:column; gap:60px;">
 
-    <!-- WHAT WE'RE LOOKING FOR -->
+    <!-- 2. WHAT KIND OF STORIES -->
     <section>
       <div style="display:flex; align-items:center; gap:10px; margin-bottom:10px;">
         <span style="width:26px; height:2px; background:#E0300E;"></span>
-        <span style="font-family:'Noto Serif JP',serif; font-size:12px; font-weight:600; letter-spacing:4px; color:#E0300E;">WHAT WE LOOK FOR</span>
+        <span style="font-family:'Noto Serif JP',serif; font-size:12px; font-weight:600; letter-spacing:4px; color:#E0300E;">WHAT WE'RE LOOKING FOR</span>
       </div>
-      <h2 style="font-family:'Black Han Sans',sans-serif; font-size:clamp(24px,3.2vw,32px); letter-spacing:0.5px; margin-bottom:12px; color:#1A1613;">どんな物語を探していますか</h2>
-      <p style="font-size:15px; color:#5C5349; line-height:1.9; margin-bottom:26px; max-width:620px;">完璧な話である必要はありません。誰かの心に、そっと寄り添えるような実体験を探しています。たとえば、こんな流れの物語です。</p>
-      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:14px;">
-        <div style="background:#fff; border:1px solid #EADFC9; border-radius:16px; padding:20px;">
-          <div style="font-family:'Noto Serif JP',serif; font-size:30px; font-weight:700; color:#E0300E; line-height:1; margin-bottom:12px;">01</div>
-          <h3 style="font-size:15px; font-weight:700; margin-bottom:5px; color:#1A1613;">発端と苦境</h3>
-          <p style="font-size:13px; color:#7a7062; line-height:1.7;">何が起きて、どんなことに悩んだか。</p>
+      <h2 style="font-family:'Black Han Sans',sans-serif; font-size:clamp(24px,3.4vw,34px); letter-spacing:0.5px; margin-bottom:12px; color:#1A1613;">こんな物語を募集しています</h2>
+      <p style="font-size:15px; color:#5C5349; line-height:1.95; margin-bottom:28px; max-width:620px;">完璧な話である必要はありません。あなたの言葉のままで大丈夫です。たとえば、こんな物語をお待ちしています。</p>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:14px;">
+        <div class="wsjp-card" style="display:flex; align-items:flex-start; gap:14px; background:#fff; border:1px solid #EADFC9; border-radius:16px; padding:22px;">
+          <span style="flex:none; font-size:26px; line-height:1;">🏡</span>
+          <div><h3 style="font-size:15px; font-weight:700; color:#1A1613; line-height:1.6;">家族に受け継がれる記憶</h3></div>
         </div>
-        <div style="background:#fff; border:1px solid #EADFC9; border-radius:16px; padding:20px;">
-          <div style="font-family:'Noto Serif JP',serif; font-size:30px; font-weight:700; color:#E0300E; line-height:1; margin-bottom:12px;">02</div>
-          <h3 style="font-size:15px; font-weight:700; margin-bottom:5px; color:#1A1613;">転機</h3>
-          <p style="font-size:13px; color:#7a7062; line-height:1.7;">気持ちや状況が動き出したきっかけ。</p>
+        <div class="wsjp-card" style="display:flex; align-items:flex-start; gap:14px; background:#fff; border:1px solid #EADFC9; border-radius:16px; padding:22px;">
+          <span style="flex:none; font-size:26px; line-height:1;">🕰️</span>
+          <div><h3 style="font-size:15px; font-weight:700; color:#1A1613; line-height:1.6;">戦争・移住・時代を生き抜いた経験</h3></div>
         </div>
-        <div style="background:#fff; border:1px solid #EADFC9; border-radius:16px; padding:20px;">
-          <div style="font-family:'Noto Serif JP',serif; font-size:30px; font-weight:700; color:#E0300E; line-height:1; margin-bottom:12px;">03</div>
-          <h3 style="font-size:15px; font-weight:700; margin-bottom:5px; color:#1A1613;">回復・希望</h3>
-          <p style="font-size:13px; color:#7a7062; line-height:1.7;">どう前を向いていったか、今の気持ち。</p>
+        <div class="wsjp-card" style="display:flex; align-items:flex-start; gap:14px; background:#fff; border:1px solid #EADFC9; border-radius:16px; padding:22px;">
+          <span style="flex:none; font-size:26px; line-height:1;">🌱</span>
+          <div><h3 style="font-size:15px; font-weight:700; color:#1A1613; line-height:1.6;">仕事・失敗・再出発の物語</h3></div>
         </div>
-        <div style="background:#fff; border:1px solid #EADFC9; border-radius:16px; padding:20px;">
-          <div style="font-family:'Noto Serif JP',serif; font-size:30px; font-weight:700; color:#E0300E; line-height:1; margin-bottom:12px;">04</div>
-          <h3 style="font-size:15px; font-weight:700; margin-bottom:5px; color:#1A1613;">伝えたいこと</h3>
-          <p style="font-size:13px; color:#7a7062; line-height:1.7;">同じ悩みを持つ誰かへの言葉。</p>
+        <div class="wsjp-card" style="display:flex; align-items:flex-start; gap:14px; background:#fff; border:1px solid #EADFC9; border-radius:16px; padding:22px;">
+          <span style="flex:none; font-size:26px; line-height:1;">💗</span>
+          <div><h3 style="font-size:15px; font-weight:700; color:#1A1613; line-height:1.6;">病気・抜け毛・美容・回復に関する体験</h3></div>
         </div>
-      </div>
-      <p style="font-size:13.5px; color:#7a7062; line-height:1.8; margin-top:20px; background:#FBF7EE; border:1px solid #EADFC9; border-radius:12px; padding:16px 18px;">家族に受け継がれる記憶、人生を変えた出来事、闘病や回復の体験、立ち直りの物語、誰かに伝えたい学び ―― 内容は自由です。文章が上手でなくても大丈夫。あなたの言葉のまま送ってください。</p>
-    </section>
-
-    <!-- HOW IT WORKS (flow) -->
-    <section>
-      <div style="display:flex; align-items:center; gap:10px; margin-bottom:10px;">
-        <span style="width:26px; height:2px; background:#E0300E;"></span>
-        <span style="font-family:'Noto Serif JP',serif; font-size:12px; font-weight:600; letter-spacing:4px; color:#E0300E;">HOW IT WORKS</span>
-      </div>
-      <h2 style="font-family:'Black Han Sans',sans-serif; font-size:clamp(24px,3.2vw,32px); letter-spacing:0.5px; margin-bottom:24px; color:#1A1613;">投稿から公開までの流れ</h2>
-      <div style="display:flex; flex-direction:column; gap:0;">
-        <div style="display:flex; gap:18px;">
-          <div style="flex:none; display:flex; flex-direction:column; align-items:center;">
-            <span style="display:inline-flex; align-items:center; justify-content:center; width:40px; height:40px; border-radius:50%; background:#E0300E; color:#fff; font-family:'Noto Serif JP',serif; font-weight:700; font-size:16px;">1</span>
-            <span style="flex:1; width:2px; background:#E6DCC8; margin:6px 0;"></span>
-          </div>
-          <div style="padding-bottom:26px;">
-            <h3 style="font-size:16px; font-weight:700; color:#1A1613; margin-bottom:5px;">フォームから物語を送る</h3>
-            <p style="font-size:13.5px; color:#7a7062; line-height:1.8;">下のGoogleフォームから、あなたの体験を送ってください。表示名（実名・ニックネーム・匿名）や、質問を受け付けるかどうかも、ここで選べます。</p>
-          </div>
+        <div class="wsjp-card" style="display:flex; align-items:flex-start; gap:14px; background:#fff; border:1px solid #EADFC9; border-radius:16px; padding:22px;">
+          <span style="flex:none; font-size:26px; line-height:1;">✨</span>
+          <div><h3 style="font-size:15px; font-weight:700; color:#1A1613; line-height:1.6;">誰かを励ましたい人生の教訓</h3></div>
         </div>
-        <div style="display:flex; gap:18px;">
-          <div style="flex:none; display:flex; flex-direction:column; align-items:center;">
-            <span style="display:inline-flex; align-items:center; justify-content:center; width:40px; height:40px; border-radius:50%; background:#E0300E; color:#fff; font-family:'Noto Serif JP',serif; font-weight:700; font-size:16px;">2</span>
-            <span style="flex:1; width:2px; background:#E6DCC8; margin:6px 0;"></span>
-          </div>
-          <div style="padding-bottom:26px;">
-            <h3 style="font-size:16px; font-weight:700; color:#1A1613; margin-bottom:5px;">運営が内容を確認する</h3>
-            <p style="font-size:13.5px; color:#7a7062; line-height:1.8;">いただいた物語を、運営がていねいに読みます。プライバシーの保護や匿名化について、必要に応じてご相談します。</p>
-          </div>
-        </div>
-        <div style="display:flex; gap:18px;">
-          <div style="flex:none; display:flex; flex-direction:column; align-items:center;">
-            <span style="display:inline-flex; align-items:center; justify-content:center; width:40px; height:40px; border-radius:50%; background:#E0300E; color:#fff; font-family:'Noto Serif JP',serif; font-weight:700; font-size:16px;">3</span>
-            <span style="flex:1; width:2px; background:#E6DCC8; margin:6px 0;"></span>
-          </div>
-          <div style="padding-bottom:26px;">
-            <h3 style="font-size:16px; font-weight:700; color:#1A1613; margin-bottom:5px;">必ず、許可をいただく</h3>
-            <p style="font-size:13.5px; color:#7a7062; line-height:1.8;">公開や動画化を検討する場合は、必ず事前にご本人へ確認します。<strong style="color:#1A1613;">許可がないまま公開することはありません。</strong></p>
-          </div>
-        </div>
-        <div style="display:flex; gap:18px;">
-          <div style="flex:none; display:flex; flex-direction:column; align-items:center;">
-            <span style="display:inline-flex; align-items:center; justify-content:center; width:40px; height:40px; border-radius:50%; background:#1A1613; color:#fff; font-family:'Noto Serif JP',serif; font-weight:700; font-size:16px;">4</span>
-          </div>
-          <div>
-            <h3 style="font-size:16px; font-weight:700; color:#1A1613; margin-bottom:5px;">物語として届ける</h3>
-            <p style="font-size:13.5px; color:#7a7062; line-height:1.8;">許可をいただいた物語は、記事として、また選ばれた場合は<strong style="color:#1A1613;">短いドキュメンタリー風の動画</strong>として公開します。動画化は承認後のみ、必要に応じてAI演出を用います。</p>
-          </div>
+        <div class="wsjp-card" style="display:flex; align-items:flex-start; gap:14px; background:#fff; border:1px solid #EADFC9; border-radius:16px; padding:22px;">
+          <span style="flex:none; font-size:26px; line-height:1;">🌿</span>
+          <div><h3 style="font-size:15px; font-weight:700; color:#1A1613; line-height:1.6;">まだ知られていない小さな成功物語</h3></div>
         </div>
       </div>
     </section>
 
-    <!-- RIGHTS & REVENUE -->
+    <!-- 3. BEFORE SUBMITTING CHECKLIST -->
     <section>
       <div style="display:flex; align-items:center; gap:10px; margin-bottom:10px;">
         <span style="width:26px; height:2px; background:#E0300E;"></span>
-        <span style="font-family:'Noto Serif JP',serif; font-size:12px; font-weight:600; letter-spacing:4px; color:#E0300E;">RIGHTS &amp; REVENUE</span>
+        <span style="font-family:'Noto Serif JP',serif; font-size:12px; font-weight:600; letter-spacing:4px; color:#E0300E;">BEFORE YOU WRITE</span>
       </div>
-      <h2 style="font-family:'Black Han Sans',sans-serif; font-size:clamp(24px,3.2vw,32px); letter-spacing:0.5px; margin-bottom:12px; color:#1A1613;">権利と収益について</h2>
-      <p style="font-size:15px; color:#5C5349; line-height:1.95; margin-bottom:26px; max-width:620px;">物語の権利と、動画の制作・収益について、あらかじめわかりやすくお伝えします。むずかしい言葉ではなく、わたしたちの基本的な考え方として読んでいただければと思います。</p>
-
-      <div style="display:flex; flex-direction:column; gap:14px;">
-
-        <div style="background:#fff; border:1px solid #EADFC9; border-radius:16px; padding:24px 26px;">
-          <h3 style="font-size:15.5px; font-weight:700; color:#1A1613; margin-bottom:10px; display:flex; align-items:center; gap:10px;"><span style="font-size:20px;">📝</span>物語の権利</h3>
-          <p style="font-size:13.5px; color:#5C5349; line-height:2.0;">投稿者の元の体験や物語そのものは投稿者に属します。ただし、世界スピーチJPが制作した動画、編集済み台本、構成、ナレーション、字幕、サムネイル、デザイン、紹介文、YouTube・SNS・ウェブサイト上の公開版コンテンツは、世界スピーチJPの制作物として扱われます。</p>
-        </div>
-
-        <div style="background:#fff; border:1px solid #EADFC9; border-radius:16px; padding:24px 26px;">
-          <h3 style="font-size:15.5px; font-weight:700; color:#1A1613; margin-bottom:10px; display:flex; align-items:center; gap:10px;"><span style="font-size:20px;">🎬</span>制作・公開の許可</h3>
-          <p style="font-size:13.5px; color:#5C5349; line-height:2.0;">投稿者は、世界スピーチJPが投稿内容をもとに、記事、ショート動画、YouTube動画、SNS投稿、紹介文、サムネイル、字幕、ナレーション、その他関連コンテンツを制作・編集・公開することを許可します。</p>
-        </div>
-
-        <div style="background:#fff; border:1px solid #EADFC9; border-radius:16px; padding:24px 26px;">
-          <h3 style="font-size:15.5px; font-weight:700; color:#1A1613; margin-bottom:10px; display:flex; align-items:center; gap:10px;"><span style="font-size:20px;">📺</span>収益について</h3>
-          <p style="font-size:13.5px; color:#5C5349; line-height:2.0;">YouTube等で公開された動画から広告収益・収益化収入が発生する場合、その収益は世界スピーチJPのチャンネル運営、ウェブサイト運営、動画制作、編集、翻訳、ナレーション、デザイン、投稿管理、コミュニティ運営費用を支えるために使用されます。</p>
-        </div>
-
-        <div style="background:#fff; border:1px solid #EADFC9; border-left:4px solid #E0300E; border-radius:14px; padding:22px 26px;">
-          <h3 style="font-size:15.5px; font-weight:700; color:#1A1613; margin-bottom:10px; display:flex; align-items:center; gap:10px;"><span style="font-size:20px;">💴</span>収益分配について</h3>
-          <p style="font-size:13.5px; color:#1A1613; line-height:2.0; font-weight:500;">投稿者への収益分配・報酬は、別途書面で合意した場合を除き、発生しません。</p>
-        </div>
-
-        <div style="background:#fff; border:1px solid #EADFC9; border-radius:16px; padding:24px 26px;">
-          <h3 style="font-size:15.5px; font-weight:700; color:#1A1613; margin-bottom:10px; display:flex; align-items:center; gap:10px;"><span style="font-size:20px;">🤝</span>許可と確認</h3>
-          <p style="font-size:13.5px; color:#5C5349; line-height:2.0;">世界スピーチJPは、投稿者の許可なく物語を公開したり、動画化したりすることはありません。公開前に、使用目的・公開範囲・表示名・匿名化の有無について確認します。</p>
-        </div>
-
-      </div>
-
-      <p style="font-size:12.5px; color:#7a7062; background:#FBF7EE; border:1px dashed #E0D6C2; border-radius:12px; padding:15px 18px; line-height:1.85; margin-top:18px;">本ページの内容は、投稿・動画化に関する基本方針を説明するものです。正式な投稿規約は今後整備予定です。</p>
-    </section>
-
-    <!-- PERMISSION / PRIVACY -->
-    <section style="display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:18px;">
-      <div style="background:#fff; border:1px solid #EADFC9; border-radius:18px; padding:26px;">
-        <div style="display:inline-flex; align-items:center; justify-content:center; width:44px; height:44px; border-radius:12px; background:#FBF1D8; font-size:22px; margin-bottom:16px;">🤝</div>
-        <h3 style="font-family:'Black Han Sans',sans-serif; font-size:20px; letter-spacing:0.5px; color:#1A1613; margin-bottom:12px;">許可の仕組み</h3>
-        <ul style="list-style:none; display:flex; flex-direction:column; gap:9px; font-size:13.5px; line-height:1.75; color:#5C5349;">
-          <li style="display:flex; gap:9px;"><span style="color:#E0300E;">●</span><span>許可なく物語を公開・動画化することはありません。</span></li>
-          <li style="display:flex; gap:9px;"><span style="color:#E0300E;">●</span><span>公開・プロフィール・質問受付は、それぞれ別に選べます。</span></li>
-          <li style="display:flex; gap:9px;"><span style="color:#E0300E;">●</span><span>掲載後も、いつでも取り下げを申し出られます。</span></li>
-        </ul>
-      </div>
-      <div style="background:#fff; border:1px solid #EADFC9; border-radius:18px; padding:26px;">
-        <div style="display:inline-flex; align-items:center; justify-content:center; width:44px; height:44px; border-radius:12px; background:#FBF1D8; font-size:22px; margin-bottom:16px;">🔒</div>
-        <h3 style="font-family:'Black Han Sans',sans-serif; font-size:20px; letter-spacing:0.5px; color:#1A1613; margin-bottom:12px;">プライバシーと匿名</h3>
-        <ul style="list-style:none; display:flex; flex-direction:column; gap:9px; font-size:13.5px; line-height:1.75; color:#5C5349;">
-          <li style="display:flex; gap:9px;"><span style="color:#E0300E;">●</span><span>表示名は実名・ニックネーム・匿名から選べます。</span></li>
-          <li style="display:flex; gap:9px;"><span style="color:#E0300E;">●</span><span>名前・地域・職業などは、ご希望に応じて匿名化します。</span></li>
-          <li style="display:flex; gap:9px;"><span style="color:#E0300E;">●</span><span>連絡先は公開しません。やり取りはフォーム経由で行います。</span></li>
+      <h2 style="font-family:'Black Han Sans',sans-serif; font-size:clamp(24px,3.4vw,34px); letter-spacing:0.5px; margin-bottom:12px; color:#1A1613;">投稿前に考えてみてください</h2>
+      <p style="font-size:15px; color:#5C5349; line-height:1.95; margin-bottom:26px; max-width:620px;">全部に答える必要はありません。書きやすいところからで大丈夫です。これらを思い出すと、物語がぐっと伝わりやすくなります。</p>
+      <div style="background:#fff; border:1px solid #EADFC9; border-radius:20px; padding:14px 28px;">
+        <ul style="list-style:none; display:flex; flex-direction:column;">
+          <li style="display:flex; align-items:center; gap:14px; padding:16px 0; border-bottom:1px solid #F0E8D8; font-size:15px; color:#2a241e;"><span style="flex:none; display:inline-flex; align-items:center; justify-content:center; width:26px; height:26px; border-radius:50%; background:#FBF1D8; color:#E0300E; font-size:14px;">✓</span>何が起きたのか</li>
+          <li style="display:flex; align-items:center; gap:14px; padding:16px 0; border-bottom:1px solid #F0E8D8; font-size:15px; color:#2a241e;"><span style="flex:none; display:inline-flex; align-items:center; justify-content:center; width:26px; height:26px; border-radius:50%; background:#FBF1D8; color:#E0300E; font-size:14px;">✓</span>どんな苦しさや悩みがあったのか</li>
+          <li style="display:flex; align-items:center; gap:14px; padding:16px 0; border-bottom:1px solid #F0E8D8; font-size:15px; color:#2a241e;"><span style="flex:none; display:inline-flex; align-items:center; justify-content:center; width:26px; height:26px; border-radius:50%; background:#FBF1D8; color:#E0300E; font-size:14px;">✓</span>何が転機になったのか</li>
+          <li style="display:flex; align-items:center; gap:14px; padding:16px 0; border-bottom:1px solid #F0E8D8; font-size:15px; color:#2a241e;"><span style="flex:none; display:inline-flex; align-items:center; justify-content:center; width:26px; height:26px; border-radius:50%; background:#FBF1D8; color:#E0300E; font-size:14px;">✓</span>その後、何が変わったのか</li>
+          <li style="display:flex; align-items:center; gap:14px; padding:16px 0; border-bottom:1px solid #F0E8D8; font-size:15px; color:#2a241e;"><span style="flex:none; display:inline-flex; align-items:center; justify-content:center; width:26px; height:26px; border-radius:50%; background:#FBF1D8; color:#E0300E; font-size:14px;">✓</span>誰にこの物語を届けたいのか</li>
+          <li style="display:flex; align-items:center; gap:14px; padding:16px 0; font-size:15px; color:#2a241e;"><span style="flex:none; display:inline-flex; align-items:center; justify-content:center; width:26px; height:26px; border-radius:50%; background:#FBF1D8; color:#E0300E; font-size:14px;">✓</span>実名・ニックネーム・匿名のどれを希望するか</li>
         </ul>
       </div>
     </section>
 
-    <!-- HEALTH DISCLAIMER -->
-    <section style="background:#fff; border:1px solid #EADFC9; border-left:4px solid #E0300E; border-radius:16px; padding:24px 26px;">
+    <!-- 4. SUBMISSION CTA BLOCK -->
+    <section id="submit" style="position:relative; overflow:hidden; background:radial-gradient(circle at 12% 0%, #E0300E 0%, #B5200A 65%, #8C1707 100%); color:#fff; border-radius:24px; padding:48px 34px; text-align:center;">
+      <div style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); width:520px; height:520px; border-radius:50%; border:2px dashed rgba(255,255,255,0.13);"></div>
+      <div style="position:relative; z-index:2; max-width:560px; margin:0 auto;">
+        <div style="font-family:'Noto Serif JP',serif; font-size:11px; font-weight:600; letter-spacing:3px; color:rgba(255,255,255,0.78); margin-bottom:16px;">SUBMIT YOUR STORY</div>
+        <p style="font-family:'Noto Serif JP',serif; font-size:clamp(18px,2.6vw,24px); font-weight:600; line-height:1.7; margin-bottom:30px;">準備ができたら、下のフォームから<br>物語を送ってください。</p>
+        <a href="https://forms.gle/PLACEHOLDER" target="_blank" rel="noopener" class="wsjp-btn" style="display:inline-flex; align-items:center; gap:10px; background:#fff; color:#1A1613; padding:18px 38px; border-radius:100px; font-weight:700; font-size:16px; box-shadow:0 14px 30px rgba(0,0,0,0.2);">📝 Googleフォームで物語を送る</a>
+        <p style="font-size:12px; color:rgba(255,255,255,0.72); line-height:1.8; margin-top:18px;">現在はGoogleフォームを準備中です。正式なフォームURLに差し替える予定です。</p>
+      </div>
+    </section>
+
+    <!-- 5. PERMISSION / RIGHTS / REVENUE SUMMARY -->
+    <section>
+      <div style="display:flex; align-items:center; gap:10px; margin-bottom:10px;">
+        <span style="width:26px; height:2px; background:#E0300E;"></span>
+        <span style="font-family:'Noto Serif JP',serif; font-size:12px; font-weight:600; letter-spacing:4px; color:#E0300E;">PERMISSION &amp; RIGHTS</span>
+      </div>
+      <h2 style="font-family:'Black Han Sans',sans-serif; font-size:clamp(24px,3.4vw,34px); letter-spacing:0.5px; margin-bottom:12px; color:#1A1613;">投稿と動画化について</h2>
+      <p style="font-size:15px; color:#5C5349; line-height:1.95; margin-bottom:24px; max-width:620px;">大切な約束を、かんたんにまとめました。くわしい内容は仕組みのページでご確認いただけます。</p>
+      <div style="background:#fff; border:1px solid #EADFC9; border-radius:20px; padding:26px 30px;">
+        <ul style="list-style:none; display:flex; flex-direction:column; gap:13px; font-size:14px; line-height:1.85; color:#5C5349;">
+          <li style="display:flex; gap:11px;"><span style="color:#E0300E; flex:none;">●</span><span><strong style="color:#1A1613;">許可なく公開することはありません。</strong></span></li>
+          <li style="display:flex; gap:11px;"><span style="color:#E0300E; flex:none;">●</span><span>動画化する場合は、事前にご本人へ確認します。</span></li>
+          <li style="display:flex; gap:11px;"><span style="color:#E0300E; flex:none;">●</span><span>投稿者は、実名・ニックネーム・匿名のいずれかを選べます。</span></li>
+          <li style="display:flex; gap:11px;"><span style="color:#E0300E; flex:none;">●</span><span>元の体験や物語そのものは、投稿者に属します。</span></li>
+          <li style="display:flex; gap:11px;"><span style="color:#E0300E; flex:none;">●</span><span>世界スピーチJPが制作した動画・編集・台本・字幕・サムネイル等は、世界スピーチJPの制作物です。</span></li>
+          <li style="display:flex; gap:11px;"><span style="color:#E0300E; flex:none;">●</span><span>YouTube収益が発生する場合、収益はチャンネル・サイト・制作・運営費に使われます。</span></li>
+          <li style="display:flex; gap:11px;"><span style="color:#E0300E; flex:none;">●</span><span>別途書面合意がない限り、収益分配や報酬は発生しません。</span></li>
+        </ul>
+        <a href="/how.html" class="wsjp-link" style="display:inline-flex; align-items:center; gap:7px; margin-top:22px; color:#E0300E; font-weight:700; font-size:14px; border-bottom:1.5px solid #E0300E; padding-bottom:2px;">詳しい仕組みを見る →</a>
+      </div>
+    </section>
+
+    <!-- 6. HEALTH NOTE -->
+    <section style="background:#fff; border:1px solid #EADFC9; border-left:4px solid #E0300E; border-radius:16px; padding:24px 28px;">
       <div style="display:flex; align-items:flex-start; gap:13px;">
         <span style="flex:none; font-size:22px;">⚠️</span>
         <div>
-          <h3 style="font-size:16px; font-weight:700; color:#1A1613; margin-bottom:8px;">健康・美容・回復に関する物語について</h3>
-          <p style="font-size:13.5px; color:#5C5349; line-height:1.9;">病気、メンタルヘルス、抜け毛、美容、施術、回復などに関する物語は、<strong style="color:#1A1613;">個人の体験談</strong>として紹介します。医療的助言ではなく、特定の方法・サービス・商品を推奨したり、効果や治癒を保証したりするものではありません。世界スピーチJPは、いかなる治療法・施術も医学的に推奨しません。健康に不安がある場合は、専門家にご相談ください。</p>
+          <h3 style="font-size:15.5px; font-weight:700; color:#1A1613; margin-bottom:8px;">健康・美容・回復に関する体験について</h3>
+          <p style="font-size:13.5px; color:#5C5349; line-height:1.95;">健康、美容、抜け毛、メンタルヘルス、病気、施術、回復に関する内容は、個人の体験談として扱います。医療的助言ではなく、特定の方法・商品・サービスを推奨するものではありません。</p>
         </div>
       </div>
     </section>
 
-    <!-- SUBMIT CTA -->
-    <section id="submit" style="background:radial-gradient(circle at 12% 0%, #1A1613 0%, #2c2620 100%); color:#fff; border-radius:22px; padding:40px 30px; text-align:center;">
-      <div style="font-family:'Noto Serif JP',serif; font-size:11px; font-weight:600; letter-spacing:3px; color:rgba(255,255,255,0.55); margin-bottom:12px;">SUBMIT YOUR STORY</div>
-      <h2 style="font-family:'Black Han Sans',sans-serif; font-size:clamp(24px,3.4vw,34px); letter-spacing:0.5px; margin-bottom:14px;">物語を送る</h2>
-      <p style="font-size:14.5px; color:rgba(244,238,225,0.85); line-height:1.85; max-width:500px; margin:0 auto 28px;">フォームから、あなたの体験を送ってください。送っていただいた内容は、許可をいただくまで公開されることはありません。</p>
-      <a href="https://forms.gle/PLACEHOLDER" target="_blank" rel="noopener" class="wsjp-btn" style="display:inline-flex; align-items:center; gap:10px; background:#E0300E; color:#fff; padding:17px 36px; border-radius:100px; font-weight:700; font-size:16px; box-shadow:0 12px 28px rgba(224,48,14,0.35);">✉️ 投稿フォームを開く</a>
-      <p style="font-size:11.5px; color:rgba(255,255,255,0.5); margin-top:16px;">※ Googleフォーム（プレースホルダー）｜ メールアドレスは公開していません</p>
+    <!-- 7. WHAT HAPPENS AFTER -->
+    <section>
+      <div style="display:flex; align-items:center; gap:10px; margin-bottom:10px;">
+        <span style="width:26px; height:2px; background:#E0300E;"></span>
+        <span style="font-family:'Noto Serif JP',serif; font-size:12px; font-weight:600; letter-spacing:4px; color:#E0300E;">AFTER YOU SUBMIT</span>
+      </div>
+      <h2 style="font-family:'Black Han Sans',sans-serif; font-size:clamp(24px,3.4vw,34px); letter-spacing:0.5px; margin-bottom:26px; color:#1A1613;">投稿後の流れ</h2>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:14px;">
+        <div style="background:#fff; border:1px solid #EADFC9; border-radius:16px; padding:24px 22px;">
+          <div style="font-family:'Noto Serif JP',serif; font-size:30px; font-weight:700; color:#E0300E; line-height:1; margin-bottom:14px;">01</div>
+          <p style="font-size:14px; font-weight:700; color:#1A1613; line-height:1.7;">運営が内容を確認</p>
+        </div>
+        <div style="background:#fff; border:1px solid #EADFC9; border-radius:16px; padding:24px 22px;">
+          <div style="font-family:'Noto Serif JP',serif; font-size:30px; font-weight:700; color:#E0300E; line-height:1; margin-bottom:14px;">02</div>
+          <p style="font-size:14px; font-weight:700; color:#1A1613; line-height:1.7;">必要に応じて連絡</p>
+        </div>
+        <div style="background:#fff; border:1px solid #EADFC9; border-radius:16px; padding:24px 22px;">
+          <div style="font-family:'Noto Serif JP',serif; font-size:30px; font-weight:700; color:#E0300E; line-height:1; margin-bottom:14px;">03</div>
+          <p style="font-size:14px; font-weight:700; color:#1A1613; line-height:1.7;">公開・動画化の前に許可を確認</p>
+        </div>
+        <div style="background:#fff; border:1px solid #EADFC9; border-radius:16px; padding:24px 22px;">
+          <div style="font-family:'Noto Serif JP',serif; font-size:30px; font-weight:700; color:#E0300E; line-height:1; margin-bottom:14px;">04</div>
+          <p style="font-size:14px; font-weight:700; color:#1A1613; line-height:1.7;">記事・動画・Q&amp;Aとして紹介する可能性があります</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. FINAL CTA -->
+    <section style="position:relative; overflow:hidden; background:radial-gradient(circle at 88% 0%, #1A1613 0%, #2c2620 100%); color:#fff; border-radius:24px; padding:52px 34px; text-align:center;">
+      <div style="position:absolute; bottom:-140px; left:-100px; width:420px; height:420px; border-radius:50%; background:radial-gradient(circle, rgba(224,48,14,0.18) 0%, rgba(224,48,14,0) 70%);"></div>
+      <div style="position:relative; z-index:2; max-width:600px; margin:0 auto;">
+        <img src="/assets/avatar.jpg" alt="" width="72" height="72" style="width:72px; height:72px; border-radius:50%; object-fit:cover; background:#fff; box-shadow:0 0 0 3px rgba(255,255,255,0.9); margin-bottom:22px;">
+        <h2 style="font-family:'Black Han Sans',sans-serif; font-size:clamp(22px,3.4vw,34px); letter-spacing:0.5px; line-height:1.4; margin-bottom:28px;">あなたの経験が、<br>誰かの希望になるかもしれません。</h2>
+        <a href="#submit" class="wsjp-btn" style="display:inline-flex; align-items:center; gap:10px; background:#E0300E; color:#fff; padding:17px 38px; border-radius:100px; font-weight:700; font-size:16px; box-shadow:0 14px 30px -8px rgba(224,48,14,0.6);">✉️ 物語を送る</a>
+      </div>
     </section>
 
     <!-- bottom nav -->
-    <div style="padding-top:8px; display:flex; flex-wrap:wrap; gap:12px; align-items:center; justify-content:space-between;">
-      <a href="/blog/" class="wsjp-btn" style="display:inline-flex; align-items:center; gap:8px; background:transparent; color:#1A1613; border:1.5px solid #1A1613; padding:12px 22px; border-radius:100px; font-size:14px; font-weight:700;">← 物語アーカイブ</a>
-      <a href="/" class="wsjp-btn" style="display:inline-flex; align-items:center; gap:8px; background:transparent; color:#1A1613; border:1.5px solid #1A1613; padding:12px 22px; border-radius:100px; font-size:14px; font-weight:700;">ホームへ戻る</a>
+    <div style="padding-top:4px; display:flex; flex-wrap:wrap; gap:12px; align-items:center; justify-content:space-between;">
+      <a href="/how.html" class="wsjp-btn" style="display:inline-flex; align-items:center; gap:8px; background:transparent; color:#1A1613; border:1.5px solid #1A1613; padding:12px 22px; border-radius:100px; font-size:14px; font-weight:700;">仕組みを見る</a>
+      <a href="/blog/" class="wsjp-btn" style="display:inline-flex; align-items:center; gap:8px; background:transparent; color:#1A1613; border:1.5px solid #1A1613; padding:12px 22px; border-radius:100px; font-size:14px; font-weight:700;">物語アーカイブ →</a>
     </div>
   </main>
 
-  <footer style="position:relative; z-index:2; background:#F4EEE1; border-top:1px solid #E6DCC8; color:#8a8073; padding:30px 28px; text-align:center; font-size:13px; margin-top:40px;">
+  <!-- FOOTER -->
+  <footer style="position:relative; z-index:2; background:#F4EEE1; border-top:1px solid #E6DCC8; color:#8a8073; padding:30px 28px; text-align:center; font-size:13px; margin-top:46px;">
     <div style="max-width:1100px; margin:0 auto; display:flex; flex-wrap:wrap; gap:8px 16px; align-items:center; justify-content:center;">
       <span style="font-family:'Black Han Sans',sans-serif; color:#1A1613; font-size:15px;">世界スピーチ<span style="color:#E0300E;">JP</span></span>
       <span style="opacity:0.5;">｜</span><span>物語を送る</span>
